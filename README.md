@@ -1,4 +1,5 @@
 # Dualis App - Language Practice Landing Page
+
 Dualis is a premium, interactive landing page designed for mastering spoken English and German naturally. This project is built to showcase a high-fidelity user experience for professional language learners.
 
 ### Core Technologies
@@ -17,7 +18,7 @@ Dualis is a premium, interactive landing page designed for mastering spoken Engl
 
 ### How to View the Project
 
-1. Download the project folder.
-2. Open `index.html` in your web browser.
+1. Download or clone the project folder.
+2. Open the folder with a local web server (such as VS Code's **Live Server**) and view `index.html`.
 
 _Note: Because this project uses modern JavaScript modules for better organization, it is recommended to open the folder using a local web server (like the "Live Server" extension in VS Code) to ensure all interactive features function correctly._
