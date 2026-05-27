@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Dualis App - Language Practice Landing Page
+Dualis is a premium, interactive landing page designed for mastering spoken English and German naturally. This project is built to showcase a high-fidelity user experience for professional language learners.
 
-# Run and deploy your AI Studio app
+### Core Technologies
 
-This contains everything you need to run your app locally.
+- **HTML5**: Semantic structure and accessible content.
+- **CSS3**: Modern styling, responsive layouts, and smooth animations.
+- **Vanilla JavaScript**: Interactive logic, dynamic language switching, and simulated coaching sessions.
 
-View your app in AI Studio: https://ai.studio/apps/6578eb9e-38e6-41cd-bc7a-f3095c87d988
+### Key Features
 
-## Run Locally
+- **Interactive Language Lab**: Practice speaking with dedicated tutors like Sarah, Dr. Elsbeth, and Hannes.
+- **Bilingual Interface**: Instantly switch the entire page between English and German.
+- **Vocal Feedback Simulations**: Get real-time reviews on fluency, clarity, and grammar patterns.
+- **Custom Themes**: Support for elegant Dark and Light modes.
+- **Fully Responsive**: Optimized for a premium experience on mobile, tablet, and desktop devices.
 
-**Prerequisites:**  Node.js
+### How to View the Project
 
+1. Download the project folder.
+2. Open `index.html` in your web browser.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+_Note: Because this project uses modern JavaScript modules for better organization, it is recommended to open the folder using a local web server (like the "Live Server" extension in VS Code) to ensure all interactive features function correctly._
