@@ -7,6 +7,7 @@ import { initNavbar } from './navbar.js';
 import { initScrollRevealAndCounters } from './counters.js';
 import { initLanguageSwitcher, registerLangCallback, setLanguageMode } from './language-switch.js';
 import { initAnimations, renderHeroPrompts, renderPlaygroundWorkspace } from './animations.js';
+import { initPivotTracks } from './pivot_tracks.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Initialize core system utilities
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Initialize interactive dashboards & coaches databases
   initLanguageSwitcher();
   initAnimations();
+  initPivotTracks();
 
   // 3. Coordinate real-time views rendering on language toggle
   registerLangCallback(() => {
