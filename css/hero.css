@@ -884,6 +884,30 @@
 .line-green { border-color: #a7f3d0; }
 
 /* Workspace / Speaking Arena detailed views in lab dashboard */
+.playground-lead-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 15px auto;
+}
+
+.playground-lead-image img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+  display: block;
+  opacity: 0.95;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.playground-lead-image img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
 .playground-section {
   padding: 100px 0;
   position: relative;
