@@ -1,0 +1,711 @@
+/* ==========================================================================
+   THEMES: VARIABLES & APP-WIDE COLOR SCHEMES (English & German)
+   ========================================================================== */
+
+/* 🇬🇧 English Theme Configuration - Default / Dark Mode */
+[data-theme="en"],
+[data-theme="en"][data-appearance="dark"] {
+  --bg-dots: rgba(0, 112, 187, 0.06);
+  --color-bg: #001529;
+  --color-navbar-bg: rgba(0, 21, 41, 0.72);
+  --color-mobile-menu-bg: rgba(0, 10, 20, 0.95);
+  --color-surface: rgba(0, 36, 68, 0.65);
+  --color-surface-hover: rgba(0, 48, 90, 0.8);
+  --color-border: rgba(0, 112, 187, 0.25);
+  --color-border-hover: rgba(139, 92, 246, 0.35);
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-accent-1: #F0F8FF;            /* Brand Custom Sky IBM Blue */
+  --color-accent-2: #00a0e9;            /* Bright Cyan */
+  --color-accent-3: #8b5cf6;            /* Purple */
+  --color-accent-rgb-1: 0, 112, 187;
+  --color-accent-rgb-2: 0, 160, 233;
+  --color-accent-rgb-3: 139, 92, 246;
+  --glow-shadow: 0 0 40px rgba(0, 112, 187, 0.15);
+  --btn-grad: linear-gradient(135deg, #8A2BE2 0%, #5d1799 100%);
+  --hero-glow-grad: radial-gradient(circle at 50% 30%, rgba(0, 112, 187, 0.22) 0%, rgba(139, 92, 246, 0.05) 50%, transparent 100%);
+  --badge-bg: rgba(0, 112, 187, 0.15);
+  --badge-text: #60a5fa;
+  --active-lang-indicator: #0070BB;
+
+  /* Shadows variable definitions */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 40px 80px rgba(0, 0, 0, 0.5);
+  --inset-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  --pill-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  --color-card-bg: rgba(0, 36, 68, 0.65);
+  --color-card-border: rgba(0, 112, 187, 0.25);
+  --color-card-text: #f8fafc;
+  --color-input-bg: rgba(0, 10, 20, 0.55);
+  --color-indicator-bg: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
+  --color-indicator-border: rgba(255, 255, 255, 0.15);
+  
+  --classroom-gradient-start: rgba(0, 36, 68, 0.4);
+  --classroom-panel-bg: radial-gradient(100% 100% at 50% 0%, rgba(0, 36, 68, 0.5) 0%, rgba(0, 10, 20, 0.95) 100%);
+  --workspace-bg: radial-gradient(100% 100% at 50% 0%, rgba(var(--color-accent-rgb-1), 0.08) 0%, rgba(0, 0, 0, 0.45) 100%), var(--color-surface);
+  --bubble-en-bg: rgba(0, 24, 48, 0.85);
+  --bubble-de-bg: rgba(22, 17, 17, 0.9);
+  --bubble-ai-bg: rgba(15, 12, 18, 0.9);
+}
+
+/* 🇬🇧 English Theme Configuration - Light Mode */
+[data-theme="en"][data-appearance="light"] {
+  --bg-dots: rgba(0, 127, 255, 0.05);
+  --color-bg: #f4f9ff;
+  --color-navbar-bg: rgba(244, 249, 255, 0.85);
+  --color-mobile-menu-bg: rgba(255, 255, 255, 0.98);
+  --color-surface: #ffffff;
+  --color-surface-hover: #eaf4ff;
+  --color-border: rgba(0, 127, 255, 0.15);
+  --color-border-hover: rgba(0, 127, 255, 0.35);
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-accent-1: #007FFF;            /* Brand Custom Sky Blue */
+  --color-accent-2: #0070BB;            /* Secondary darker blue */
+  --color-accent-3: #5AA9FF;            /* Lighter blue */
+  --color-accent-rgb-1: 0, 127, 255;
+  --color-accent-rgb-2: 0, 112, 187;
+  --color-accent-rgb-3: 90, 169, 255;
+  --glow-shadow: 0 0 40px rgba(0, 127, 255, 0.08);
+  --btn-grad: linear-gradient(135deg, #007FFF 0%, #0059b2 100%);
+  --hero-glow-grad: radial-gradient(circle at 50% 30%, rgba(0, 127, 255, 0.12) 0%, rgba(90, 169, 255, 0.03) 60%, transparent 100%);
+  --badge-bg: rgba(0, 127, 255, 0.08);
+  --badge-text: #007FFF;
+  --active-lang-indicator: #007FFF;
+
+  /* Shadows variable definitions */
+  --shadow-sm: 0 4px 10px rgba(0, 127, 255, 0.02);
+  --shadow-md: 0 10px 25px rgba(0, 127, 255, 0.03);
+  --shadow-lg: 0 15px 40px rgba(0, 127, 255, 0.05);
+  --shadow-xl: 0 20px 50px rgba(0, 127, 255, 0.07);
+  --inset-shadow: inset 0 1px 3px rgba(0, 127, 255, 0.05);
+  --pill-shadow: 0 2px 6px rgba(0, 127, 255, 0.05);
+
+  --color-card-bg: #ffffff;
+  --color-card-border: rgba(0, 127, 255, 0.12);
+  --color-card-text: #0f172a;
+  --color-input-bg: #f8fafc;
+  --color-indicator-bg: linear-gradient(135deg, rgba(0, 127, 255, 0.06) 0%, rgba(0, 127, 255, 0.02) 100%);
+  --color-indicator-border: rgba(0, 127, 255, 0.16);
+  
+  --classroom-gradient-start: rgba(0, 127, 255, 0.03);
+  --classroom-panel-bg: radial-gradient(100% 100% at 50% 0%, rgba(0, 127, 255, 0.06) 0%, rgba(255, 255, 255, 0.98) 100%);
+  --workspace-bg: radial-gradient(100% 100% at 50% 0%, rgba(var(--color-accent-rgb-1), 0.04) 0%, rgba(0, 127, 255, 0.01) 100%), var(--color-surface);
+  --bubble-en-bg: rgba(244, 249, 255, 0.95);
+  --bubble-de-bg: rgba(0, 127, 255, 0.06);
+  --bubble-ai-bg: rgba(0, 127, 255, 0.04);
+}
+
+/* 🇩🇪 German Theme Configuration - Default / Dark Mode */
+[data-theme="de"],
+[data-theme="de"][data-appearance="dark"] {
+  --bg-dots: rgba(185, 28, 28, 0.04);
+  --color-bg: #0b0b0f;
+  --color-navbar-bg: rgba(11, 11, 15, 0.72);
+  --color-mobile-menu-bg: rgba(17, 19, 26, 0.95);
+  --color-surface: rgba(17, 24, 39, 0.85);
+  --color-surface-hover: rgba(17, 24, 39, 0.95);
+  --color-border: rgba(185, 28, 28, 0.18);
+  --color-border-hover: rgba(212, 160, 23, 0.35);
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-accent-1: #0b0b0f;            /* German Dark Base */
+  --color-accent-2: #b91c1c;            /* German Deep Red */
+  --color-accent-3: #d4a017;            /* German Muted Gold */
+  --color-accent-rgb-1: 11, 11, 15;
+  --color-accent-rgb-2: 185, 28, 28;
+  --color-accent-rgb-3: 212, 160, 23;
+  --glow-shadow: 0 0 40px rgba(185, 28, 28, 0.15);
+  --btn-grad: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 65%, #991b1b 100%);
+  --hero-glow-grad: radial-gradient(circle at 50% 30%, rgba(185, 28, 28, 0.14) 0%, rgba(212, 160, 23, 0.04) 50%, transparent 100%);
+  --badge-bg: rgba(185, 28, 28, 0.15);
+  --badge-text: #f87171;
+  --active-lang-indicator: #b91c1c;
+
+  /* Shadows variable definitions */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 40px 80px rgba(0, 0, 0, 0.6);
+  --inset-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  --pill-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+
+  --color-card-bg: #111827;
+  --color-card-border: rgba(185, 28, 28, 0.18);
+  --color-card-text: #f8fafc;
+  --color-input-bg: rgba(11, 11, 15, 0.6);
+  --color-indicator-bg: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+  --color-indicator-border: rgba(255, 255, 255, 0.1);
+  
+  --classroom-gradient-start: rgba(185, 28, 28, 0.05);
+  --classroom-panel-bg: radial-gradient(100% 100% at 50% 0%, rgba(185, 28, 28, 0.06) 0%, #111827 100%);
+  --workspace-bg: radial-gradient(100% 100% at 50% 0%, rgba(var(--color-accent-rgb-1), 0.08) 0%, rgba(11, 11, 15, 0.9) 100%), var(--color-surface);
+  --bubble-en-bg: rgba(17, 24, 39, 0.95);
+  --bubble-de-bg: rgba(185, 28, 28, 0.12);
+  --bubble-ai-bg: rgba(212, 160, 23, 0.08);
+}
+
+/* 🇩🇪 German Theme Configuration - Light Mode */
+[data-theme="de"][data-appearance="light"] {
+  --bg-dots: rgba(255, 8, 0, 0.03);
+  --color-bg: #fffdf5;
+  --color-navbar-bg: rgba(255, 253, 245, 0.8);
+  --color-mobile-menu-bg: rgba(255, 255, 255, 0.98);
+  --color-surface: #ffffff;
+  --color-surface-hover: #fff9d6;
+  --color-border: rgba(255, 8, 0, 0.12);
+  --color-border-hover: rgba(253, 238, 0, 0.4);
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-accent-1: #111827;            /* Elegant dark charcoal */
+  --color-accent-2: #FF0800;            /* Premium Red */
+  --color-accent-3: #FDEE00;            /* Premium Yellow */
+  --color-accent-rgb-1: 17, 24, 39;
+  --color-accent-rgb-2: 255, 8, 0;
+  --color-accent-rgb-3: 253, 238, 0;
+  --glow-shadow: 0 0 40px rgba(255, 8, 0, 0.06);
+  --btn-grad: linear-gradient(135deg, #FF0800 0%, #cc0600 100%);
+  --hero-glow-grad: radial-gradient(circle at 50% 30%, rgba(253, 238, 0, 0.18) 0%, rgba(255, 8, 0, 0.03) 60%, transparent 100%);
+  --badge-bg: rgba(253, 238, 0, 0.18);
+  --badge-text: #cc0600;
+  --active-lang-indicator: #FF0800;
+
+  /* Shadows variable definitions */
+  --shadow-sm: 0 4px 10px rgba(255, 8, 0, 0.02);
+  --shadow-md: 0 10px 25px rgba(255, 8, 0, 0.03);
+  --shadow-lg: 0 15px 40px rgba(255, 8, 0, 0.04);
+  --shadow-xl: 0 20px 50px rgba(255, 8, 0, 0.05);
+  --inset-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  --pill-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  --color-card-bg: #ffffff;
+  --color-card-border: rgba(255, 8, 0, 0.12);
+  --color-card-text: #111827;
+  --color-input-bg: #fdfdfd;
+  --color-indicator-bg: linear-gradient(135deg, rgba(253, 238, 0, 0.12) 0%, rgba(255, 8, 0, 0.02) 100%);
+  --color-indicator-border: rgba(255, 8, 0, 0.12);
+  
+  --classroom-gradient-start: rgba(253, 238, 0, 0.03);
+  --classroom-panel-bg: radial-gradient(100% 100% at 50% 0%, rgba(253, 238, 0, 0.08) 0%, rgba(255, 255, 255, 0.98) 100%);
+  --workspace-bg: radial-gradient(100% 100% at 50% 0%, rgba(var(--color-accent-rgb-1), 0.04) 0%, rgba(255, 8, 0, 0.01) 100%), var(--color-surface);
+  --bubble-en-bg: rgba(243, 244, 246, 0.9);
+  --bubble-de-bg: rgba(253, 238, 0, 0.12);
+  --bubble-ai-bg: rgba(255, 8, 0, 0.05);
+}
+
+/* --- Theme Toggle Button --- */
+.theme-toggle {
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  border-radius: 9999px;
+  width: 58px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-medium);
+  padding: 3px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  outline: none;
+  overflow: hidden;
+  border-color: var(--color-border);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08), 0 2px 8px var(--shadow-sm);
+}
+
+/* Beautiful switch sliding thumb */
+.theme-toggle-thumb {
+  width: 24px;
+  height: 24px;
+  background: var(--color-surface);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* Custom CSS Icons */
+.theme-toggle .theme-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom CSS Sun Icon */
+.sun-icon-css {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.sun-core {
+  width: 8px;
+  height: 8px;
+  background: #eab308; /* Gorgeous golden sun */
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(234, 179, 8, 0.6);
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sun-ray {
+  position: absolute;
+  width: 1.5px;
+  height: 3px;
+  background: #eab308;
+  border-radius: 999px;
+  left: 50%;
+  bottom: 50%;
+  opacity: 0.9;
+}
+/* Place absolute lines radiating from center */
+.sun-ray.r1 { transform: translateX(-50%) rotate(0deg) translateY(-5px); }
+.sun-ray.r2 { transform: translateX(-50%) rotate(45deg) translateY(-5px); }
+.sun-ray.r3 { transform: translateX(-50%) rotate(90deg) translateY(-5px); }
+.sun-ray.r4 { transform: translateX(-50%) rotate(135deg) translateY(-5px); }
+.sun-ray.r5 { transform: translateX(-50%) rotate(180deg) translateY(-5px); }
+.sun-ray.r6 { transform: translateX(-50%) rotate(225deg) translateY(-5px); }
+.sun-ray.r7 { transform: translateX(-50%) rotate(270deg) translateY(-5px); }
+.sun-ray.r8 { transform: translateX(-50%) rotate(315deg) translateY(-5px); }
+
+/* Custom CSS Moon Icon */
+.moon-icon-css-wrapper {
+  /* wrapper helper */
+}
+.moon-icon-css {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: inset -3.5px -1.5px 0 0 #f1f5f9; /* Soft silvery moon crescent */
+  transform: rotate(-15deg);
+  transition: box-shadow 0.3s ease;
+  filter: drop-shadow(0 0 4px rgba(226, 232, 240, 0.5));
+}
+
+/* Light / Dark Mode switch animations */
+[data-appearance="light"] .theme-toggle {
+  background: #fef9c3; /* Very soft pastel yellow-white background */
+  border-color: #fef08a;
+}
+[data-appearance="light"] .theme-toggle-thumb {
+  transform: translateX(0);
+  background: #ffffff;
+}
+[data-appearance="light"] .theme-icon.sun-icon-css {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+[data-appearance="light"] .theme-icon.moon-icon-css-wrapper {
+  opacity: 0;
+  transform: rotate(90deg) scale(0);
+}
+
+[data-appearance="dark"] .theme-toggle {
+  background: #1e1b4b; /* Deep Indigo base */
+  border-color: #312e81;
+}
+[data-appearance="dark"] .theme-toggle-thumb {
+  transform: translateX(26px);
+  background: #0f172a; /* Slate 900 custom background thumb */
+}
+[data-appearance="dark"] .theme-icon.sun-icon-css {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0);
+}
+[data-appearance="dark"] .theme-icon.moon-icon-css-wrapper {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+/* Elegant Light Mode Micro Overrides */
+[data-appearance="light"] {
+  scrollbar-color: rgba(0, 0, 0, 0.3) var(--color-bg) !important;
+}
+[data-appearance="light"] ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: var(--color-bg) !important;
+}
+[data-appearance="light"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-appearance="light"] .tabs-toggle-pill {
+  box-shadow: var(--inset-shadow) !important;
+  background: var(--color-input-bg) !important;
+}
+
+[data-appearance="light"] .pivot-tab-btn.active {
+  background: #ffffff !important;
+  border-color: var(--color-border) !important;
+  box-shadow: var(--pill-shadow) !important;
+}
+
+[data-appearance="light"] .bento-illustration,
+[data-appearance="light"] .footer-bottom {
+  border-color: var(--color-border) !important;
+}
+
+[data-appearance="light"] .author-avatar {
+  background: var(--color-surface-hover) !important;
+}
+
+[data-appearance="light"] .hero-interactive-card,
+[data-appearance="light"] .pricing-card.premium,
+[data-appearance="light"] .classroom-canvas-panel,
+[data-appearance="light"] .pivot-image-holder {
+  box-shadow: var(--shadow-lg), var(--glow-shadow) !important;
+}
+
+[data-appearance="light"] .bento-card,
+[data-appearance="light"] .stat-card,
+[data-appearance="light"] .pricing-card:not(.premium),
+[data-appearance="light"] .faq-item {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* Add Transition Smoothness to Main Themed Containers */
+body,
+.site-header,
+.bento-card,
+.testimonial-card,
+.pricing-card,
+.stat-card,
+.hero-interactive-card,
+.lang-split-selector,
+.lang-card-btn,
+.theme-toggle,
+.pivot-tab-btn,
+.classroom-canvas-panel,
+.pivot-image-holder,
+.faq-item {
+  transition: background var(--transition-smooth), 
+              background-color var(--transition-smooth), 
+              color var(--transition-smooth), 
+              border-color var(--transition-smooth), 
+              box-shadow var(--transition-smooth);
+}
+
+/* ==========================================================================
+   🇩🇪 GERMAN MODE EXQUISITE APP OVERRIDES (Muted Gold & Deep Red Glow)
+   ========================================================================== */
+[data-theme="de"] .btn-primary {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast) !important;
+}
+
+[data-theme="de"] .btn-primary:hover {
+  box-shadow: 0 0 18px rgba(212, 160, 23, 0.45), 0 8px 24px rgba(185, 28, 28, 0.35) !important;
+  transform: translateY(-2px) !important;
+}
+
+[data-theme="de"] .lang-card-btn.active {
+  background: rgba(185, 28, 28, 0.15) !important;
+  border-color: rgba(212, 160, 23, 0.45) !important;
+  box-shadow: 0 0 15px rgba(212, 160, 23, 0.1) !important;
+}
+
+[data-theme="de"] .bento-card,
+[data-theme="de"] .pricing-card,
+[data-theme="de"] .hero-interactive-card,
+[data-theme="de"] .testimonial-card {
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast) !important;
+}
+
+[data-theme="de"] .bento-card:hover,
+[data-theme="de"] .pricing-card:hover,
+[data-theme="de"] .hero-interactive-card:hover,
+[data-theme="de"] .testimonial-card:hover {
+  border-color: rgba(212, 160, 23, 0.35) !important;
+  box-shadow: 0 12px 30px rgba(11, 11, 15, 0.5), 0 0 22px rgba(185, 28, 28, 0.1) !important;
+}
+
+[data-theme="de"] .nav-link {
+  transition: color var(--transition-fast), text-shadow var(--transition-fast) !important;
+}
+
+[data-theme="de"] .nav-link:hover,
+[data-theme="de"] .nav-link.active {
+  color: #d4a017 !important;
+  text-shadow: 0 0 8px rgba(212, 160, 23, 0.3) !important;
+}
+
+/* German Active Indicator line custom colors */
+[data-theme="de"] .nav-link::after {
+  background-color: #d4a017 !important;
+}
+
+[data-theme="de"] .mono-tag {
+  background: rgba(185, 28, 28, 0.12) !important;
+  border: 1px solid rgba(212, 160, 23, 0.25) !important;
+  color: #f8fafc !important;
+}
+
+/* Glow indicators styled elegantly with the gold highlight */
+[data-theme="de"] .status-dot {
+  background-color: #d4a017 !important;
+  box-shadow: 0 0 8px #d4a017 !important;
+}
+
+/* ==========================================================================
+   🇩🇪 GERMAN MODE PREMIUM EXQUISITE LIGHT OVERRIDES
+   ========================================================================== */
+@keyframes de-gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+[data-theme="de"][data-appearance="light"] .animated-gradient-line {
+  height: 3px;
+  background: linear-gradient(90deg, #111827, #FF0800, #FDEE00, #FF0800, #111827);
+  background-size: 250% auto;
+  animation: de-gradient-flow 5s ease infinite;
+}
+
+[data-theme="de"][data-appearance="light"] .btn-primary {
+  background: linear-gradient(135deg, #FF0800 0%, #cc0600 100%) !important;
+  border-color: rgba(255, 8, 0, 0.2) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="de"][data-appearance="light"] .btn-primary:hover {
+  box-shadow: 0 0 20px rgba(253, 238, 0, 0.4), 0 8px 25px rgba(255, 8, 0, 0.35) !important;
+  transform: translateY(-2px) !important;
+  background: linear-gradient(135deg, #FF0800 0%, #e60700 100%) !important;
+}
+
+[data-theme="de"][data-appearance="light"] .lang-card-btn.active {
+  background: linear-gradient(135deg, rgba(253, 238, 0, 0.18) 0%, rgba(255, 8, 0, 0.04) 100%) !important;
+  border-color: #FF0800 !important;
+  box-shadow: 0 0 18px rgba(253, 238, 0, 0.25) !important;
+  color: #111827 !important;
+}
+
+[data-theme="de"][data-appearance="light"] .bento-card,
+[data-theme="de"][data-appearance="light"] .pricing-card,
+[data-theme="de"][data-appearance="light"] .hero-interactive-card,
+[data-theme="de"][data-appearance="light"] .testimonial-card {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(255, 8, 0, 0.12) !important;
+  background: #ffffff !important;
+}
+
+/* Elegant German flag top accent line for cards in Light Mode */
+[data-theme="de"][data-appearance="light"] .bento-card::before,
+[data-theme="de"][data-appearance="light"] .pricing-card::before,
+[data-theme="de"][data-appearance="light"] .hero-interactive-card::before,
+[data-theme="de"][data-appearance="light"] .testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #111827 0%, #111827 33%, #FF0800 33%, #FF0800 66%, #FDEE00 66%, #FDEE00 100%);
+  opacity: 0.85;
+  z-index: 10;
+}
+
+[data-theme="de"][data-appearance="light"] .bento-card:hover,
+[data-theme="de"][data-appearance="light"] .pricing-card:hover,
+[data-theme="de"][data-appearance="light"] .hero-interactive-card:hover,
+[data-theme="de"][data-appearance="light"] .testimonial-card:hover {
+  border-color: rgba(255, 8, 0, 0.28) !important;
+  box-shadow: 0 12px 30px rgba(255, 8, 0, 0.05), 0 0 25px rgba(253, 238, 0, 0.18) !important;
+  transform: translateY(-4px) !important;
+}
+
+[data-theme="de"][data-appearance="light"] .nav-link:hover,
+[data-theme="de"][data-appearance="light"] .nav-link.active {
+  color: #FF0800 !important;
+  text-shadow: 0 0 10px rgba(255, 8, 0, 0.2) !important;
+}
+
+[data-theme="de"][data-appearance="light"] .nav-link::after {
+  background-color: #FF0800 !important;
+}
+
+[data-theme="de"][data-appearance="light"] .mono-tag {
+  background: linear-gradient(135deg, rgba(253, 238, 0, 0.15) 0%, rgba(255, 8, 0, 0.04) 100%) !important;
+  border: 1px solid rgba(255, 8, 0, 0.16) !important;
+  color: #cc0600 !important;
+}
+
+[data-theme="de"][data-appearance="light"] .status-dot {
+  background-color: #FF0800 !important;
+  box-shadow: 0 0 10px #FF0800, 0 0 4px #FF0800 !important;
+}
+
+/* Soft blur glow orbs for background ambiance */
+[data-theme="de"][data-appearance="light"] .radial-gradient-glow {
+  background: radial-gradient(circle, rgba(253, 238, 0, 0.14) 0%, rgba(255, 8, 0, 0.05) 60%, transparent 80%) !important;
+}
+
+
+/* ==========================================================================
+   🇬🇧 ENGLISH MODE PREMIUM EXQUISITE LIGHT OVERRIDES
+   ========================================================================== */
+@keyframes en-gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+[data-theme="en"][data-appearance="light"] body {
+  background: linear-gradient(135deg, #f4f9ff, #ffffff) !important;
+  background-image: radial-gradient(var(--bg-dots) 1px, transparent 1px), linear-gradient(135deg, #f4f9ff, #ffffff) !important;
+  background-size: 24px 24px, 100% 100% !important;
+  background-attachment: scroll, fixed !important;
+}
+
+[data-theme="en"][data-appearance="light"] .animated-gradient-line {
+  height: 3px;
+  background: linear-gradient(90deg, #007FFF, #5AA9FF, #ffffff, #5AA9FF, #007FFF);
+  background-size: 250% auto;
+  animation: en-gradient-flow 6s ease infinite;
+}
+
+[data-theme="en"][data-appearance="light"] .btn-primary {
+  background: linear-gradient(135deg, #007FFF 0%, #0059b2 100%) !important;
+  border-color: rgba(0, 127, 255, 0.15) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+[data-theme="en"][data-appearance="light"] .btn-primary:hover {
+  box-shadow: 0 0 20px rgba(90, 169, 255, 0.35), 0 8px 25px rgba(0, 127, 255, 0.25) !important;
+  transform: translateY(-2px) !important;
+  background: linear-gradient(135deg, #007FFF 0%, #004c99 100%) !important;
+}
+
+[data-theme="en"][data-appearance="light"] .lang-card-btn.active {
+  background: linear-gradient(135deg, rgba(0, 127, 255, 0.1) 0%, rgba(90, 169, 255, 0.02) 100%) !important;
+  border-color: #007FFF !important;
+  box-shadow: 0 0 18px rgba(0, 127, 255, 0.15) !important;
+  color: #0f172a !important;
+}
+
+[data-theme="en"][data-appearance="light"] .bento-card,
+[data-theme="en"][data-appearance="light"] .pricing-card,
+[data-theme="en"][data-appearance="light"] .hero-interactive-card,
+[data-theme="en"][data-appearance="light"] .testimonial-card {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(0, 127, 255, 0.14) !important;
+  background: rgba(255, 255, 255, 0.82) !important; /* Premium subtle translucency */
+  backdrop-filter: blur(16px) !important;              /* Sleek glassmorphism */
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 10px 30px rgba(0, 127, 255, 0.02) !important;
+}
+
+/* Symmetrical elegant light-blue top accent border for card aesthetics */
+[data-theme="en"][data-appearance="light"] .bento-card::before,
+[data-theme="en"][data-appearance="light"] .pricing-card::before,
+[data-theme="en"][data-appearance="light"] .hero-interactive-card::before,
+[data-theme="en"][data-appearance="light"] .testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #007FFF, #5AA9FF, #007FFF);
+  opacity: 0.85;
+  z-index: 10;
+}
+
+[data-theme="en"][data-appearance="light"] .bento-card:hover,
+[data-theme="en"][data-appearance="light"] .pricing-card:hover,
+[data-theme="en"][data-appearance="light"] .hero-interactive-card:hover,
+[data-theme="en"][data-appearance="light"] .testimonial-card:hover {
+  border-color: rgba(0, 127, 255, 0.32) !important;
+  box-shadow: 0 12px 30px rgba(0, 127, 255, 0.04), 0 0 25px rgba(90, 169, 255, 0.15) !important;
+  transform: translateY(-4px) !important;
+}
+
+[data-theme="en"][data-appearance="light"] .nav-link:hover,
+[data-theme="en"][data-appearance="light"] .nav-link.active {
+  color: #007FFF !important;
+  text-shadow: 0 0 10px rgba(0, 127, 255, 0.15) !important;
+}
+
+[data-theme="en"][data-appearance="light"] .nav-link::after {
+  background-color: #007FFF !important;
+}
+
+[data-theme="en"][data-appearance="light"] .mono-tag {
+  background: linear-gradient(135deg, rgba(0, 127, 255, 0.08) 0%, rgba(90, 169, 255, 0.02) 100%) !important;
+  border: 1px solid rgba(0, 127, 255, 0.15) !important;
+  color: #0059b2 !important;
+}
+
+[data-theme="en"][data-appearance="light"] .status-dot {
+  background-color: #007FFF !important;
+  box-shadow: 0 0 10px #007FFF, 0 0 4px #007FFF !important;
+}
+
+/* Ambient soft gradient glow layer for English mode */
+[data-theme="en"][data-appearance="light"] .radial-gradient-glow {
+  background: radial-gradient(circle, rgba(0, 127, 255, 0.1) 0%, rgba(90, 169, 255, 0.03) 65%, transparent 80%) !important;
+}
+
+/* Decorative floating elegant blue blur glow circles under the hero section and margins */
+[data-theme="en"][data-appearance="light"] .hero-glow-layer::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 127, 255, 0.16) 0%, rgba(90, 169, 255, 0.02) 70%, transparent 100%);
+  filter: blur(60px);
+  pointer-events: none;
+  animation: float-slow-english-1 15s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+[data-theme="en"][data-appearance="light"] .hero-glow-layer::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(90, 169, 255, 0.14) 0%, rgba(0, 127, 255, 0.02) 70%, transparent 100%);
+  filter: blur(80px);
+  pointer-events: none;
+  animation: float-slow-english-2 18s ease-in-out infinite alternate-reverse;
+  z-index: -1;
+}
+
+@keyframes float-slow-english-1 {
+  0% { transform: translateY(0) scale(1) rotate(0deg); }
+  100% { transform: translateY(-40px) scale(1.1) rotate(20deg); }
+}
+
+@keyframes float-slow-english-2 {
+  0% { transform: translateY(0) scale(1) rotate(0deg); }
+  100% { transform: translateY(50px) scale(0.95) rotate(-15deg); }
+}
+
+

@@ -1,0 +1,129 @@
+/* ==========================================================================
+   FOOTER: SITE FOOTER STRUCTURE, COLUMNS, SOCIAL LINKS, AND FINAL CTA BANNER
+   ========================================================================== */
+
+/* --- Footer & Final CTA Section --- */
+.final-cta {
+  padding: 100px 0;
+  position: relative;
+}
+
+.cta-banner {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(var(--color-accent-rgb-1), 0.08) 0%, transparent 100%), var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: 64px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-xl), var(--glow-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.cta-banner h2 {
+  font-size: 2.75rem;
+  max-width: 700px;
+  color: var(--color-text-primary);
+}
+
+.cta-banner p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  color: var(--color-text-secondary);
+}
+
+.site-footer {
+  position: relative;
+  border-top: none;
+  padding: 60px 0;
+  background: var(--color-bg);
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-border);
+  transition: background var(--transition-smooth);
+}
+
+/* 🇬🇧 English: Premium crisp blue color only */
+body[data-theme="en"] .site-footer::before {
+  background: #007fff;
+}
+
+/* 🇩🇪 German: Iconic German flag colors (Black, Red, Gold) */
+body[data-theme="de"] .site-footer::before {
+  background: linear-gradient(to right, #000000 33.33%, #FF0800 33.33%, #FF0800 66.66%, #FDEE00 66.66%);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 250px;
+}
+
+.footer-brand p {
+  font-size: 0.825rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.footer-col h4 {
+  font-size: 0.825rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-primary);
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-text-primary);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.03);
+  padding-top: 32px;
+}
+
+.footer-bottom p {
+  font-size: 0.775rem;
+  color: var(--color-text-secondary);
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}

@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dualis app — Natural English & German Language Practice</title>
+    <!-- Connect styling files sequentially to ensure variable resolution -->
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body data-theme="en">
+    
+    <!-- Ambient glowing backgrounds -->
+    <div class="hero-glow-layer" id="ambient-glow"></div>
+
+    <!-- MAIN APP STRUCTURE -->
+
+    <!-- --- 1. Sticky Navbar --- -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-wrapper">
+        <a href="#hero" class="logo" id="logo-link">
+          <span>Dualis</span><span class="logo-light"></span>
+        </a>
+
+        <!-- Premium aligned right container containing nav links and utility controls -->
+        <div class="nav-right-container">
+          <!-- Navigation Links -->
+          <nav class="nav-links" id="nav-links">
+            <a href="#features" class="nav-link">
+              <span class="lang-en">Features</span>
+              <span class="lang-de">Funktionen</span>
+            </a>
+            <a href="#how-it-works" class="nav-link">
+              <span class="lang-en">How It Works</span>
+              <span class="lang-de">Ablauf</span>
+            </a>
+            <a href="#testimonials" class="nav-link">
+              <span class="lang-en">Testimonials</span>
+              <span class="lang-de">Kundenstimmen</span>
+            </a>
+            <a href="#pricing" class="nav-link">
+              <span class="lang-en">Pricing</span>
+              <span class="lang-de">Preise</span>
+            </a>
+            <a href="#playground" class="nav-link">
+              <span class="lang-en">Language Lab</span>
+              <span class="lang-de">Sprach-Labor</span>
+            </a>
+          </nav>
+
+          <!-- Right Side: Switcher & Get Started -->
+          <div class="nav-right">
+            <!-- Premium Language Switcher Split-Cards -->
+            <div class="lang-split-selector" id="lang-toggle-box" title="Switch Language / Sprache wechseln">
+              <button class="lang-card-btn active" id="btn-lang-en" data-lang="en">
+                <span class="lang-card-flag">🇬🇧</span> <span class="lang-card-name">English</span>
+              </button>
+              <button class="lang-card-btn" id="btn-lang-de" data-lang="de">
+                <span class="lang-card-flag">🇩🇪</span> <span class="lang-card-name">Deutsch</span>
+              </button>
+            </div>
+
+            <!-- Elegant Theme Switcher (Dark/Light Toggle) -->
+            <button class="theme-toggle" id="theme-toggle-btn" title="Toggle Theme / Farbschema wechseln" aria-label="Toggle theme">
+              <span class="theme-toggle-thumb">
+                <!-- Custom CSS Sun Icon (Replaces Sun SVG/Emoji) -->
+                <span class="theme-icon sun-icon-css">
+                  <span class="sun-core"></span>
+                  <span class="sun-ray r1"></span>
+                  <span class="sun-ray r2"></span>
+                  <span class="sun-ray r3"></span>
+                  <span class="sun-ray r4"></span>
+                  <span class="sun-ray r5"></span>
+                  <span class="sun-ray r6"></span>
+                  <span class="sun-ray r7"></span>
+                  <span class="sun-ray r8"></span>
+                </span>
+                <!-- Custom CSS Moon Icon (Replaces Moon SVG/Emoji) -->
+                <span class="theme-icon moon-icon-css-wrapper">
+                  <span class="moon-icon-css"></span>
+                </span>
+              </span>
+            </button>
+
+            <!-- Get Started Navbar action button -->
+            <a href="#playground" class="btn btn-primary nav-btn-start">
+              <span class="lang-en">Get Started</span>
+              <span class="lang-de">Loslegen</span>
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
+              <span class="mobile-menu-lines"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- --- 2. Hero Section --- -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Hero Details (Babbel inspired layout structure) -->
+        <div class="hero-content">
+          <div class="mono-tag" id="hero-badge">
+            <span class="lang-en">🇬🇧 CONVERSATION PRACTICE ACTIVE</span>
+            <span class="lang-de">🇩🇪 AKTIVES REDETRAINING AKTIV</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="lang-en">Speak English & German <span class="text-gradient">Naturally.</span></span>
+            <span class="lang-de">Sprechen Sie Englisch & Deutsch <span class="text-gradient">ganz natürlich.</span></span>
+          </h1>
+
+          <p class="subtitle">
+            <span class="lang-en">The premium interactive practice platform designed strictly for mastering spoken professional English and German. Eliminate verbal stage-fright and practice with natural conversation guides.</span>
+            <span class="lang-de">Die erstklassige interaktive Plattform, die speziell für das Meistern von gesprochenem Englisch und Deutsch entwickelt wurde. Bauen Sie Sprechängste ab und trainieren Sie mit angebundenen Lehrguides.</span>
+          </p>
+
+          <div class="hero-btn-group">
+            <a href="#playground" class="btn btn-primary">
+              <span class="lang-en">Start Free Practice</span>
+              <span class="lang-de">Kostenlos testen</span>
+            </a>
+            <a href="#how-it-works" class="btn btn-secondary">
+              <span class="lang-en">See How It Works</span>
+              <span class="lang-de">Ablauf ansehen</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Clean flat illustration from user -->
+        <div class="hero-illustration-container">
+          <img src="/src/assets/images/hero_learning_image_1779598247164.png" referrerPolicy="no-referrer" alt="English and German speaking practice" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --- Warmup Speaking Lab Section --- -->
+    <section class="warmup-lab-section reveal-on-scroll">
+      <div class="container">
+        <div class="warmup-header">
+          <div class="mono-tag">
+            <span class="lang-en">SPEAKING PRACTICE LAB</span>
+            <span class="lang-de">SPRECHLABOR WARMUP</span>
+          </div>
+          <h3>
+            <span class="lang-en">Welcome to your speaking lab! Click on a reply prompt below to test your conversational flow</span>
+            <span class="lang-de">Willkommen im Sprechlabor! Wählen Sie eine Antwort unten, um Ihren Redefluss zu testen</span>
+          </h3>
+        </div>
+        
+        <!-- Modern interactive speaking app mockup -->
+        <div class="hero-interactive-card" id="hero-mic-widget">
+          <div class="card-glares"></div>
+          
+          <div class="card-header-badge">
+            <div class="coach-pfp-wrapper">
+              <div class="coach-pfp" id="hero-coach-avatar">S</div>
+              <div class="coach-info">
+                <span class="coach-name" id="hero-coach-name">
+                  <span class="lang-en">Sarah <span class="lang-flag-small">🇬🇧</span></span>
+                  <span class="lang-de">Dr. Elsbeth <span class="lang-flag-small">🇩🇪</span></span>
+                </span>
+                <span class="coach-accent" id="hero-coach-meta">
+                  <span class="lang-en">British Executive Accent (London)</span>
+                  <span class="lang-de">Medizinisches & Wissenschaftliches Hochdeutsch</span>
+                </span>
+                <div class="status-indicator">
+                  <span class="status-dot"></span>
+                  <span class="lang-en">LIVE TUTOR ONLINE</span>
+                  <span class="lang-de">LEHRER ONLINE</span>
+                </div>
+              </div> <!-- End coach-info -->
+            </div> <!-- End coach-pfp-wrapper -->
+          </div> <!-- End card-header-badge -->
+
+          <!-- Dialog Output Bubble -->
+          <div class="sim-chat-box">
+            <div class="sim-message" id="hero-dialogue-bubble">
+              <span class="lang-en">"Welcome to your speaking warmup! Select an option below to practice talking with your tutor."</span>
+              <span class="lang-de">"Willkommen beim Sprechübungen! Wählen Sie unten eine Antwort aus, um das Gespräch mit Ihrem Tutor zu simulieren."</span>
+            </div>
+            <div class="sim-timestamp" id="hero-dialogue-time">UTC 07:20</div>
+          </div>
+
+          <!-- Quick interactive input prompts -->
+          <div class="user-interaction-panel">
+            <div class="interaction-label">
+              <span class="lang-en">Respond to Tutor (Practice Dialogue)</span>
+              <span class="lang-de font-sans">Auf Lerneinheit antworten (Sprechübungen)</span>
+            </div>
+            
+            <div class="prompts-scaffold-container" id="hero-prompts-scaffold">
+              <!-- Content injected via main.js depending on selected language -->
+            </div>
+          </div>
+
+          <!-- Analytical phonetic diagnostics overlay -->
+          <div class="phonetic-feedback-board" id="hero-feedback-overlay">
+            <div class="feedback-meta">
+              <div class="mono-tag mono-tag-compact">
+                <span class="lang-en">Pronunciation & Phrasing Tip</span>
+                <span class="lang-de">Aussprache- & Stilhinweis</span>
+              </div>
+              <span class="sim-timestamp" id="hero-diagnostics-timer">Review Mode</span>
+            </div>
+
+            <div class="text-phoneme-correction" id="hero-diagnostics-text">
+              <!-- Diagnostics summary markup injected here -->
+            </div>
+
+            <div class="scores-row">
+              <div class="score-chip">
+                <span class="score-num" id="hero-score-fluency">95%</span>
+                <span class="score-label">
+                  <span class="lang-en">Fluency</span>
+                  <span class="lang-de font-mono">Flüssigkeit</span>
+                </span>
+              </div>
+              <div class="score-chip">
+                <span class="score-num" id="hero-score-accent">91%</span>
+                <span class="score-label">
+                  <span class="lang-en font-sans">Clarity</span>
+                  <span class="lang-de font-mono">Deutlichkeit</span>
+                </span>
+              </div>
+              <div class="score-chip">
+                <span class="score-num" id="hero-score-syntax">90%</span>
+                <span class="score-label">
+                  <span class="lang-en">Grammar Balance</span>
+                  <span class="lang-de font-mono">Grammatik</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- --- 3. Statistics Section --- -->
+    <section class="stats-section reveal-on-scroll">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <!-- Card 1: Active Learners -->
+          <div class="stat-card">
+            <div class="stat-ring-overlay"></div>
+            <div class="stat-number" data-target="1248322" data-suffix="+">1,248,322+</div>
+            <div class="stat-label">
+              <span class="lang-en">Active Learners Globally</span>
+              <span class="lang-de">Aktive Lernende weltweit</span>
+            </div>
+            <p class="stat-desc">
+              <span class="lang-en">Professionals and academics in 140+ countries securing verbal milestones daily.</span>
+              <span class="lang-de">Fachkräfte und Akademiker in über 140 Ländern, die täglich rhetorische Hürden meistern.</span>
+            </p>
+          </div>
+
+          <!-- Card 2: Speaking Confidence -->
+          <div class="stat-card">
+            <div class="stat-ring-overlay"></div>
+            <div class="stat-number" data-target="98.6" data-suffix="%">98.6%</div>
+            <div class="stat-label">
+              <span class="lang-en font-sans">Speaking Confidence Lift</span>
+              <span class="lang-de">Erhöhtes Selbstvertrauen</span>
+            </div>
+            <p class="stat-desc">
+              <span class="lang-en">Users register a massive drop in verbal stress and boardroom hesitation metrics.</span>
+              <span class="lang-de">Nutzer verzeichnen einen drastischen Rückgang von Sprachblockaden in Besprechungen.</span>
+            </p>
+          </div>
+
+          <!-- Card 3: Success Rate -->
+          <div class="stat-card">
+            <div class="stat-ring-overlay"></div>
+            <div class="stat-number" data-target="99.2" data-suffix="%">99.2%</div>
+            <div class="stat-label">
+              <span class="lang-en font-sans">Official Scoring Accuracy</span>
+              <span class="lang-de">Zertifizierter Prüfungserfolg</span>
+            </div>
+            <p class="stat-desc">
+              <span class="lang-en">Students successfully passing Goethe, IELTS, and technical recruitment benchmarks.</span>
+              <span class="lang-de">Absolventen bestehen Goethe-, IELTS- und wissenschaftliche Einstellungsgespräche bravourös.</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- --- Logo Wall (Trust Section Alignment) --- -->
+    <section class="trust-section reveal-on-scroll">
+      <div class="container">
+        <h2 class="trust-title">
+          <span class="lang-en">Empowering speech integration across global business networks</span>
+          <span class="lang-de">Unterstützt Fachkräfte führender internationaler Institutionen</span>
+        </h2>
+        <div class="brands-grid">
+          <div class="brand-logo"><span class="brand-icon icon-blue"></span><span>BERLIN INC.</span></div>
+          <div class="brand-logo"><span class="brand-icon icon-cyan"></span><span>LERNER GMBH</span></div>
+          <div class="brand-logo"><span class="brand-icon icon-purple"></span><span>MUNICH UNION</span></div>
+          <div class="brand-logo"><span class="brand-icon icon-red"></span><span>VORTEX CORP</span></div>
+          <div class="brand-logo"><span class="brand-icon icon-yellow"></span><span>BABBEL LABS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animated premium language-themed line separating trust section & features -->
+    <div class="animated-gradient-line"></div>
+
+
+    <!-- --- 4. Beautiful Features Section --- -->
+    <section class="features-section reveal-on-scroll" id="features">
+      <div class="container">
+        <div class="section-lead-split">
+          <div class="section-lead-content">
+            <div class="mono-tag">
+              <span class="lang-en">PRACTICAL METHOD</span>
+              <span class="lang-de">PRAKTISCHE METHODE</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-en">Master spoken linguistics. <br>Without academic anxiety.</span>
+              <span class="lang-de">Meistern Sie die Sprache. <br>Ohne Lernstress.</span>
+            </h2>
+            <p class="subtitle">
+              <span class="lang-en">We do not do static visual spelling matches. Dualis App teaches natural phrase delivery, conversational rhythm, and real pronunciation benchmarks to guide learners safely.</span>
+              <span class="lang-de">Keine statischen Vokabeltests mehr. Dualis App trainiert natürliche Phrasierungen, realen Redefluss und die richtige Mundstellung für den optimalen Erfolg.</span>
+            </p>
+          </div>
+
+          <div class="section-lead-artwork">
+            <div class="artwork-container">
+              <!-- Backdrop Circle -->
+              <div class="html-backdrop-circle"></div>
+
+              <!-- Floating Badges EN and DE -->
+              <div class="html-lang-badge-de">
+                <div class="flag">
+                  <span class="flag-black"></span>
+                  <span class="flag-red"></span>
+                  <span class="flag-gold"></span>
+                </div>
+                <div class="html-lang-de-code">DE</div>
+              </div>
+
+              <div class="html-lang-badge-en">
+                <div class="flag">
+                  <span class="flag-cross-v"></span>
+                  <span class="flag-cross-h"></span>
+                </div>
+                <div class="html-lang-en-code">EN</div>
+              </div>
+
+              <!-- Floating Speech Bubbles -->
+              <div class="html-speech-left">Hallo!</div>
+              <div class="html-speech-right">Hey!</div>
+
+              <!-- Main character sitting at the desk -->
+              <div class="html-student-boy">
+                <!-- Outer Torso Jackets and Sweaters -->
+                <div class="html-boy-torso">
+                  <div class="html-boy-vest"></div>
+                  <div class="html-boy-sweater">
+                    <div class="sweater-collar"></div>
+                    <div class="stripes">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Neck and Head -->
+                <div class="html-boy-neck"></div>
+                <div class="html-head-wrapper">
+                  <div class="html-boy-hair"></div>
+                  <div class="html-boy-head">
+                    <div class="eyebrows">
+                      <div class="eyebrow left"></div>
+                      <div class="eyebrow right"></div>
+                    </div>
+                    <div class="eyes">
+                      <div class="eye"></div>
+                      <div class="eye"></div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="mouth">
+                      <div class="teeth"></div>
+                      <div class="tongue"></div>
+                    </div>
+                    <div class="html-boy-ear-l"></div>
+                    <div class="html-boy-ear-r"></div>
+                  </div>
+                </div>
+
+                <!-- Hands holding Red Smartphone -->
+                <div class="html-smartphone-held">
+                  <div class="phone-camera"></div>
+                  <div class="phone-screen">
+                    <div class="html-screen-de">Guten Tag</div>
+                    <div class="html-screen-arrow">⇅</div>
+                    <div class="html-screen-en">Good Day</div>
+                  </div>
+                </div>
+
+                <!-- Hand Overlay Elements -->
+                <div class="html-hand-left">
+                  <span class="palm"></span>
+                  <div class="knuckles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="html-hand-right">
+                  <span class="palm"></span>
+                  <div class="knuckles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wooden Desk Surface -->
+              <div class="html-desk-surface"></div>
+
+              <!-- Desk Props: Notebook, Pencils, MP3 Player -->
+              <div class="html-desk-notebook">
+                <div class="spine"></div>
+                <div class="rings">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="html-pencil-purple"></div>
+              <div class="html-pencil-orange"></div>
+
+              <div class="html-mp3-player">
+                <div class="screen">♫</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1: Pronunciation Feedback -->
+          <div class="bento-card col-span-2">
+            <div class="bento-icon-box">
+              🎙️
+            </div>
+            <div class="bento-text-box">
+              <h3>
+                <span class="lang-en">Pronunciation Feedback & Guides</span>
+                <span class="lang-de">Aussprache-Feedback & Guides</span>
+              </h3>
+              <p>
+                <span class="lang-en">Use intuitive sound-stress guides and syllable mappings to resolve speech errors instantly. Pinpoint accents like the English "th" (/ð/) or German front rounded vowels (/y:/) to speak confidently in professional environments.</span>
+                <span class="lang-de">Nutzen Sie unkomplizierte Aussprache- und Betonungsguides, um kleine Fehler sofort abzulegen. Erkennen Sie Schwachstellen im englischen "th" (/ð/) oder bei deutschen Umlauten (/y:/) zu sprechen.</span>
+              </p>
+            </div>
+            <div class="bento-illustration">
+              <div class="bento-illustration-header">
+                <span class="lang-en">TARGET PRONUNCIATION: 94%</span>
+                <span class="lang-de">ZIELGENAUIGKEIT: 94%</span>
+                <span class="text-badge-color">VOCAL TIMING PRACTICE</span>
+              </div>
+              <div class="spectral-lines">
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+                <div class="spectral-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Grammar & Vocabulary Builder -->
+          <div class="bento-card">
+            <div class="bento-icon-box">
+              💬
+            </div>
+            <div class="bento-text-box">
+              <h3>
+                <span class="lang-en">Grammar & Vocabulary Builder</span>
+                <span class="lang-de">Grammatik- & Wortschatzaufbau</span>
+              </h3>
+              <p>
+                <span class="lang-en">Experience fluid conversational streams and sentence reviews tailored strictly to business meetings, casual dining, or professional recruitment.</span>
+                <span class="lang-de">Festigen Sie anspruchsvolle grammatikalische Muster und Vokabular für Besprechungen, Alltagsthemen und internationale Arbeitsfelder.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Beginner-Friendly Lessons -->
+          <div class="bento-card">
+            <div class="bento-icon-box">
+              🕒
+            </div>
+            <div class="bento-text-box">
+              <h3>
+                <span class="lang-en">Beginner-Friendly Lessons</span>
+                <span class="lang-de">Anfängerfreundliches Lernen</span>
+              </h3>
+              <p>
+                <span class="lang-en">Start safely with guided vocabulary, elementary dialogue prompts, and clear, step-by-step vocal exercises that build core talking confidence.</span>
+                <span class="lang-de">Beginnen Sie völlig entspannt mit einfachen Dialogübungen, Schritt-für-Schritt-Anleitungen und klaren Redewendungen für den Einstieg.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Career & Interview Training -->
+          <div class="bento-card">
+            <div class="bento-icon-box">
+              💼
+            </div>
+            <div class="bento-text-box">
+              <h3>
+                <span class="lang-en">Career & Interview Training</span>
+                <span class="lang-de">Karriere- & Bewerbungstraining</span>
+              </h3>
+              <p>
+                <span class="lang-en font-sans">Drill job interview scenarios, international salary negotiations, and presentation layouts modeled after official certification standards.</span>
+                <span class="lang-de">Simulationen von Verhandlungen, Vorträgen und HR-Fragen bereiten Sie optimal auf anspruchsvolle Karriereschritte vor.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5: Interactive Language Guides -->
+          <div class="bento-card col-span-2">
+            <div class="bento-icon-box">
+              👥
+            </div>
+            <div class="bento-text-box">
+              <h3>
+                <span class="lang-en">Interactive Conversational Guides</span>
+                <span class="lang-de">Interaktive Konversations-Guides</span>
+              </h3>
+              <p>
+                <span class="lang-en">Practice with specialized speaking models (Sarah, Dr. Elsbeth, Hannes) designed by certified native educators to match different focus tracks and local dialects perfectly.</span>
+                <span class="lang-de">Trainieren Sie mit interaktiven Profilen, die von muttersprachlichen Dozenten entwickelt wurden, um sich optimal auf verschiedene Lebensbereiche vorzubereiten.</span>
+              </p>
+            </div>
+            
+            <!-- Immserive visual progress tracker -->
+            <div class="bento-illustration-tray">
+              <div class="progress-trajectory-board">
+                <!-- Level 1 -->
+                <div class="trajectory-step">
+                  <div class="step-marker marker-blue"></div>
+                  <div class="step-text">
+                    <div class="step-title">Level 1</div>
+                    <div class="step-desc">Foundational: 65%</div>
+                  </div>
+                </div>
+                <!-- Connector 1 -->
+                <div class="trajectory-line line-purple"></div>
+                <!-- Level 2 -->
+                <div class="trajectory-step">
+                  <div class="step-marker marker-purple"></div>
+                  <div class="step-text">
+                    <div class="step-title">Level 2</div>
+                    <div class="step-desc">Conversational: 85%</div>
+                  </div>
+                </div>
+                <!-- Connector 2 -->
+                <div class="trajectory-line line-green"></div>
+                <!-- Level 3 -->
+                <div class="trajectory-step active">
+                  <div class="step-marker marker-green highlight-pulse"></div>
+                  <div class="step-text">
+                    <div class="step-title">Level 3</div>
+                    <div class="step-desc">FLUENCY: 96%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- --- 5. Conversation Practice Section --- -->
+    <section class="conversation-practice-section reveal-on-scroll" id="conversation-practice">
+      <div class="container conversation-split-layout">
+        
+        <!-- Left details -->
+        <div class="pivot-content-holder no-margin">
+          <div class="mono-tag mono-tag-accent2">
+            <span class="lang-en">ENGLISH ↔ GERMAN FLOW</span>
+            <span class="lang-de">ZWEISPRACHIGER REDEFLUSS</span>
+          </div>
+          <h2>
+            <span class="lang-en">Seamless bilingual bridge. <br>Break down borders.</span>
+            <span class="lang-de">Nahtloser Übergang. <br>Souverän übersetzen.</span>
+          </h2>
+          <p>
+            <span class="lang-en">Watch the immediate structural mapping between English stakeholders and German structures. Our platform helps you maintain an elegant phrase cadence across both languages, translating vocabulary flawlessly on the fly.</span>
+            <span class="lang-de">Beobachten Sie den lebendigen Phrasenaustausch zwischen Englisch und Deutsch. Unsere Plattform sorgt für eine perfekte Harmonie des Vortragsrhythmus und schließt Übersetzungslücken im Handumdrehen.</span>
+          </p>
+          
+          <div class="persona-bullets-grid">
+            <div class="persona-bullet-item">
+              <div class="persona-bullet-icon bullet-icon-blue">✓</div>
+              <div class="persona-bullet-text">
+                <h4 class="lang-en">Natural pronunciation bridges</h4>
+                <h4 class="lang-de">Natürliche Akzent-Adaption</h4>
+                <p class="lang-en">Switch syntax effortlessly without transferring hard regional mouth patterns.</p>
+                <p class="lang-de">Wechseln Sie mühelos das Sprachsystem, ohne einen unnatürlichen Fremdakzent fortzusetzen.</p>
+              </div>
+            </div>
+            <div class="persona-bullet-item">
+              <div class="persona-bullet-icon bullet-icon-red">✓</div>
+              <div class="persona-bullet-text">
+                <h4 class="lang-en">Immediate lexical improvements</h4>
+                <h4 class="lang-de">Präzise Phrasierungsempfehlungen</h4>
+                <p class="lang-en font-sans">Convert simple phrases into high-impact professional terminology instantly.</p>
+                <p class="lang-de">Bringen Sie einfache Begrifflichkeiten direkt auf verhandlungssicheres muttersprachliches Niveau.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Beautiful Interactive Discourse Illustration box -->
+        <div class="illustration-workspace">
+          <div class="card-glares"></div>
+          <div class="illustration-flow-line"></div>
+          
+          <!-- English bubble -->
+          <div class="bubble-row-left">
+            <div class="speech-bubble-illustrative english-side">
+              <span class="bubble-badge-en">🇬🇧 SPEAKER INSIGHT</span>
+              <div class="bubble-text-styled">"How do we plan to scale our core microservices edge node architecture globally?"</div>
+              <div class="bubble-translation">
+                <span class="lang-en">Target Tone: Highly Technical Executive</span>
+                <span class="lang-de">Zielton: Wirtschaftlich & Technisch prägnant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sentence Transition Connector bubble -->
+          <div class="speech-bubble-illustrative ai-flow">
+            <span class="bubble-badge-ai">💬 SENTENCE TRANSITION CHECK</span>
+            <div class="bubble-text-styled">
+              <span class="lang-en">Structuring grammar. Adapting verbs and sentence connectors for idiomatic conversational phrasing...</span>
+              <span class="lang-de">Grammatik-Strukturierung. Passe Verben und Satzverbinder für eine natürliche, muttersprachliche Formulierung an...</span>
+            </div>
+          </div>
+
+          <!-- German bubble -->
+          <div class="bubble-row-right">
+            <div class="speech-bubble-illustrative german-side">
+              <span class="bubble-badge-de">🇩🇪 DEUTSCHE STRUKTUR</span>
+              <div class="bubble-text-styled">"Wir beabsichtigen, die Kernarchitektur über weltweite Serverless-Edge-Instanzen zu skalieren."</div>
+              <div class="bubble-translation">
+                <span class="lang-en">Practice Score: Excellent (96% precision)</span>
+                <span class="lang-de">Bewertung: Exzellent (96% Genauigkeit)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- --- 6. How It Works Section --- -->
+    <section class="how-it-works-section reveal-on-scroll" id="how-it-works">
+      <div class="container">
+        
+        <div class="section-lead">
+          <div class="mono-tag mono-tag-purple">
+            <span class="lang-en">FOUR SIMPLE STEPS</span>
+            <span class="lang-de">4 EINFACHE SCHRITTE</span>
+          </div>
+          
+          <!-- Library Idioms Banner Image -->
+          <div class="journey-banner-container">
+            <img src="/src/assets/images/idioms_library_banner_1779598869360.png" referrerPolicy="no-referrer" alt="Academic library language learning idioms" />
+          </div>
+
+          <h2 class="section-title">
+            <span class="lang-en">Your journey to fluency.</span>
+            <span class="lang-de">Ihr direkter Weg zur Redegewandtheit.</span>
+          </h2>
+          <p class="subtitle">
+            <span class="lang-en">Built like an advanced speaking academy, customized entirely for professional networking and high-growth careers.</span>
+            <span class="lang-de">Konzipiert als moderne Gesprächsakademie, perfekt zugeschnitten auf anspruchsvolle Branchenerwartungen.</span>
+          </p>
+        </div>
+
+        <div class="steps-timeline-horizontal">
+          
+          <!-- Step 1: Choose Language -->
+          <div class="step-item">
+            <div class="step-badge">
+              01
+              <div class="step-icon-inner step-bg-blue">🌐</div>
+            </div>
+            <h3 class="step-title-text">
+              <span class="lang-en">Choose Language</span>
+              <span class="lang-de font-display">Sprache wählen</span>
+            </h3>
+            <p class="step-desc-text">
+              <span class="lang-en font-sans">Select 🇬🇧 English or 🇩🇪 German instantly to configure your study tracks and native phrase guides.</span>
+              <span class="lang-de">Wählen Sie Englisch oder Deutsch, um Ihre personalisierte Lerneinheit und native Phrasen-Guides festzulegen.</span>
+            </p>
+          </div>
+
+          <!-- Step 2: Practice Speaking -->
+          <div class="step-item">
+            <div class="step-badge">
+              02
+              <div class="step-icon-inner step-bg-purple">🎤</div>
+            </div>
+            <h3 class="step-title-text">
+              <span class="lang-en">Practice Speaking</span>
+              <span class="lang-de font-display">Laut vorlesen</span>
+            </h3>
+            <p class="step-desc-text">
+              <span class="lang-en">Read structured dialogue templates or practice conversational flows freely with our native-expert scenarios.</span>
+              <span class="lang-de">Nutzen Sie anspruchsvolle Lektionsvorlagen oder unterhalten Sie sich frei über diverse Alltags- und Berufsszenarien.</span>
+            </p>
+          </div>
+
+          <!-- Step 3: Practice & Review -->
+          <div class="step-item">
+            <div class="step-badge">
+              03
+              <div class="step-icon-inner step-bg-cyan">📊</div>
+            </div>
+            <h3 class="step-title-text">
+              <span class="lang-en">Practice & Review</span>
+              <span class="lang-de font-display">Lektion prüfen</span>
+            </h3>
+            <p class="step-desc-text">
+              <span class="lang-en font-sans">Receive structured, helpful feedback summaries highlighting key vocabulary choices, structural grammar, and phrasing tips.</span>
+              <span class="lang-de">Sie erhalten ein übersichtliches Rückmeldeprotokoll, das wichtige Vokabeln, Grammatikregeln und Aussprache-Tipps enthält.</span>
+            </p>
+          </div>
+
+          <!-- Step 4: Speak Fluently -->
+          <div class="step-item">
+            <div class="step-badge">
+              04
+              <div class="step-icon-inner step-bg-green">🏆</div>
+            </div>
+            <h3 class="step-title-text">
+              <span class="lang-en">Speak Fluently</span>
+              <span class="lang-de font-display">Erfolg sichern</span>
+            </h3>
+            <p class="step-desc-text">
+              <span class="lang-en">Incorporate feedback daily to command foreign-language negotiations, pitches, and academic applications with complete calm.</span>
+              <span class="lang-de">Integrieren Sie die Modulierungen in Ihren Alltag, um Verhandlungen, Vorlesungen und Audits vollkommen souverän zu lenken.</span>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- --- Interactive Conversational Coaching Workspace (The Language Lab) --- -->
+    <section class="playground-section reveal-on-scroll" id="playground">
+      <div class="container">
+        <div class="section-lead">
+          <div class="mono-tag" id="coaching-lab-badge">
+            <span class="lang-en">LANGUAGE LAB</span>
+            <span class="lang-de">INTERAKTIVES EXPERTEN-LABOR</span>
+          </div>
+          <h2 class="section-title">
+            <span class="lang-en">Meet your dedicated guides. <br>Enter the workspace.</span>
+            <span class="lang-de">Wählen Sie Ihren Tutor. <br>Sprech-Workspace betreten.</span>
+          </h2>
+          <p class="subtitle">
+            <span class="lang-en font-sans">Select a tutor suited to your target sector, select your conversational reply prompt below, and review helpful phrasing and lesson tips.</span>
+            <span class="lang-de">Auswahl des passenden Profils – wählen Sie eine Sprechantwort aus und prüfen Sie hilfreiche Formulierungshinweise zur Festigung.</span>
+          </p>
+        </div>
+
+        <div class="playground-grid">
+          
+          <!-- Column 1: Selector Panel -->
+          <div class="playground-selector-panel">
+            
+            <div class="playground-coach-tier">
+              <button class="playground-tab-btn active" id="playground-tab-pro">
+                <span class="lang-en">Corporate Executives</span>
+                <span class="lang-de">Wirtschaft & Management</span>
+              </button>
+              <button class="playground-tab-btn" id="playground-tab-casual">
+                <span class="lang-en">Social Fluency</span>
+                <span class="lang-de">Alltag & Networking</span>
+              </button>
+            </div>
+
+            <!-- Coaches list layout inside Bento border row -->
+            <div class="coaches-list-bento" id="coaches-list-target">
+              <!-- Dynamically rendered via main.js depending on tab and language preference -->
+            </div>
+
+          </div>
+
+          <!-- Column 2: Immersive Lab Screen -->
+          <div class="classroom-canvas-panel" id="immersive-coaching-box">
+            <div class="card-glares"></div>
+            
+            <div class="classroom-instructor-display">
+              <div class="coach-avatar-circle" id="pm-active-avatar">S</div>
+              <div>
+                <h3 id="pm-active-name">Sarah</h3>
+                <p id="pm-active-details">British Executive Accent (London)</p>
+              </div>
+            </div>
+
+            <!-- Chat screen terminal details -->
+            <div class="sim-chat-box">
+              <div class="sim-message" id="pm-response-text">
+                <span class="lang-en">"Hello student! I'm ready. Choose your tutor, click on a reply prompt below to select your speaking response, and review helpful study tips."</span>
+                <span class="lang-de">"Hallo! Ich bin bereit. Wählen Sie Ihren Tutor, klicken Sie unten auf eine der Sprechantworten, und prüfen Sie das Feedback."</span>
+              </div>
+              <div class="sim-timestamp" id="pm-time">Interactive session active. Ready to practice.</div>
+            </div>
+
+            <!-- Mic Trigger Button -->
+            <div class="mic-pulse-rings" id="pm-mic-scaffold">
+              <button class="mic-activation-btn" id="pm-mic-btn" title="Simulate vocal input">
+                🎙️
+              </button>
+            </div>
+
+            <div class="amplitude-indicator-grid" id="amplitude-row">
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+              <div class="amplitude-pixel"></div>
+            </div>
+
+            <!-- Input Choices for Interactive Experience in detailed playground -->
+            <div class="user-interaction-panel" id="playground-prompts-container">
+              <div class="interaction-label">
+                <span class="lang-en">Respond in Audio (Click prompt to simulate speaking)</span>
+                <span class="lang-de">Antworten (Klicken Sie einen Prompt an, um zu sprechen)</span>
+              </div>
+              
+              <div id="playground-prompts-scaffold">
+                <!-- prompts go here dynamically -->
+              </div>
+            </div>
+
+            <!-- Immediate feedback card overlay -->
+            <div class="phonetic-feedback-board" id="pm-feedback-report">
+              <div class="feedback-meta-row">
+                <span class="mono-tag mono-tag-success">
+                  <span class="lang-en">PRACTICE REVIEW COMPLETE</span>
+                  <span class="lang-de">PRÜFUNG ABGESCHLOSSEN</span>
+                </span>
+                <span class="sim-timestamp">Mode: Practice</span>
+              </div>
+
+              <div class="text-phoneme-correction" id="pm-diagnostics-body">
+                <!-- diagnostics summary goes here -->
+              </div>
+
+              <!-- Score values display grid -->
+              <div class="scores-row">
+                <div class="score-chip">
+                  <span class="score-num" id="pm-stats-fluency">95%</span>
+                  <span class="score-label">Fluency</span>
+                </div>
+                <div class="score-chip">
+                  <span class="score-num" id="pm-stats-accent">91%</span>
+                  <span class="score-label">Clarity</span>
+                </div>
+                <div class="score-chip">
+                  <span class="score-num" id="pm-stats-syntax">89%</span>
+                  <span class="score-label">Grammar</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- --- Target Audience / Persona Pivot Tracks --- -->
+    <section class="tabs-section reveal-on-scroll" id="focus">
+      <div class="container">
+        
+        <div class="section-lead section-lead-shorter">
+          <div class="mono-tag">
+            <span class="lang-en">TARGET TRACKS</span>
+            <span class="lang-de">ZIELGRUPPENPROFIL</span>
+          </div>
+          <h2 class="section-title">
+            <span class="lang-en">Specifically optimized sectors.</span>
+            <span class="lang-de">Maßgeschneiderte Lehrprogramme.</span>
+          </h2>
+        </div>
+
+        <div class="tabs-header-ctr">
+          <div class="tabs-toggle-pill">
+            <button class="pivot-tab-btn active" id="btn-pivot-pro" data-pivot="pro">
+              <span class="lang-en">🚀 Core Professionals</span>
+              <span class="lang-de">🚀 Führungskräfte & Spezialisten</span>
+            </button>
+            <button class="pivot-tab-btn" id="btn-pivot-stu" data-pivot="stu">
+              <span class="lang-en">🎓 Academic Pathfinders</span>
+              <span class="lang-de">🎓 Studierende & Absolventen</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Panel 1: Professionals -->
+        <div class="pivot-panel-box active" id="pivot-panel-pro">
+          <div class="pivot-content-holder">
+            <h3>
+              <span class="lang-en">Negotiate, pitch, and scale in global boardrooms.</span>
+              <span class="lang-de">Souverän verhandeln, präsentieren und führen.</span>
+            </h3>
+            <p>
+              <span class="lang-en">Engineered for executives, senior project managers, and tech leads who read and write excellently but stumble on vocal delivery under immense stake pressures.</span>
+              <span class="lang-de">Entwickelt für Fach- und Führungskräfte, die zwar gut lesen und schreiben, denen es in Verhandlungen aber an rhetorischer Schlagfertigkeit und Tonhöhenpräzision fehlt.</span>
+            </p>
+            
+            <div class="persona-bullets-grid">
+              <div class="persona-bullet-item">
+                <div class="persona-bullet-icon">✓</div>
+                <div class="persona-bullet-text">
+                  <h4>
+                    <span class="lang-en">Salary negotiation drills</span>
+                    <span class="lang-de">Gehaltsverhandlungs-Simulatoren</span>
+                  </h4>
+                  <p>
+                    <span class="lang-en">Learn how to articulate value arguments firmly with clean corporate executive vocabulary.</span>
+                    <span class="lang-de">Trainieren Sie mit anspruchsvollen CEO-Interviews, Ihre Leistungen überzeugend zu schildern.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="persona-bullet-item">
+                <div class="persona-bullet-icon">✓</div>
+                <div class="persona-bullet-text">
+                  <h4>
+                    <span class="lang-en">Accent Reduction Training</span>
+                    <span class="lang-de">Artikulations- und Redetraining</span>
+                  </h4>
+                  <p>
+                    <span class="lang-en">Highlight common language traps and structural deviations, aligning your voice to native standards.</span>
+                    <span class="lang-de font-sans font-sans">Erfassen Sie typische sprachliche Stolperfallen und etablieren Sie eine ruhige, überzeugende Betonung.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pivot-image-holder">
+            <span class="mono-tag mono-tag-compact">EXECUTIVE BOARDROOM TRACK [ENG + DE]</span>
+            <div class="pivot-lead">
+              <span class="lang-en">"Focusing speaking practice on technical vocabulary density, confidence pause timing, and sentence cadence. Recommended daily simulation time: 15 minutes."</span>
+              <span class="lang-de">"Strategische Ausrichtung auf technische Schlagkraft, selbstbewusstes Pausen-Timing und Satzmelodie. Empfohlenes tägliches Training: 15 Minuten."</span>
+            </div>
+            
+            <div class="drills-board">
+              <span class="lang-en drills-title-green">RECOMMENDED DRILLS:</span>
+              <span class="lang-de drills-title-green">EMPFOHLENE TRAININGS:</span>
+              
+              <div class="drill-row">
+                <span><span>🇬🇧</span> VC Pitch Pitching Stream</span>
+                <span class="text-badge-color">Advanced</span>
+              </div>
+              <div class="drill-row">
+                <span><span>🇩🇪</span> Tarifverhandlung & Diskurs</span>
+                <span class="text-badge-color">C1 Business</span>
+              </div>
+              <div class="drill-row no-border">
+                <span><span>🇬🇧</span> Handling Hostile Q&amp;A sessions</span>
+                <span class="text-badge-color">Executive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Students -->
+        <div class="pivot-panel-box" id="pivot-panel-stu">
+          <div class="pivot-content-holder">
+            <h3>
+              <span class="lang-en">Pass academic IELTS, Goethe-Zertifikat, & university interviews.</span>
+              <span class="lang-de">Goethe-Zertifikate, IELTS & mündliche Uniprüfungen bestehen.</span>
+            </h3>
+            <p>
+              <span class="lang-en">Optimize your speaking capability to harvest maximum points in formal examine environments, avoiding linguistic brain-freezes during structural Q&As.</span>
+              <span class="lang-de">Richten Sie Ihre Aussprache gezielt nach den offiziellen Prüfungsrichlinien aus. Lernen Sie, auch bei spontaner Assoziation flüssig Argumente aufzubauen.</span>
+            </p>
+
+            <div class="persona-bullets-grid">
+              <div class="persona-bullet-item">
+                <div class="persona-bullet-icon">✓</div>
+                <div class="persona-bullet-text">
+                  <h4>
+                    <span class="lang-en">Official standard metric mapping</span>
+                    <span class="lang-de font-sans">Offizielle Bewertungskriterien</span>
+                  </h4>
+                  <p>
+                    <span class="lang-en">Receive granular evaluation structured against real CEFR bands and lexical richness levels.</span>
+                    <span class="lang-de">Präzise Analysen, die sich exakt an offiziellen Vorgaben (Kohäsion, Vokabelvariation) orientieren.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="persona-bullet-item">
+                <div class="persona-bullet-icon">✓</div>
+                <div class="persona-bullet-text">
+                  <h4>
+                    <span class="lang-en">Overcoming speaking blocks</span>
+                    <span class="lang-de font-sans font-medium">Denkblockaden ablegen</span>
+                  </h4>
+                  <p>
+                    <span class="lang-en">Our platform triggers creative prompts that instruct you to associate thoughts with calm structure.</span>
+                    <span class="lang-de font-sans">Trainieren Sie mit unerwarteten Leitfragen, um sicheres Assoziieren in Sekundenschnelle zu meistern.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pivot-image-holder">
+            <span class="mono-tag mono-tag-cyan-light">ACADEMIC EVALUATION CORE: IELTS &amp; GOETHE C1</span>
+            
+            <div class="pivot-lead">
+              <span class="lang-en">"Focusing speaking sessions on grammatical complexity ratios, syntactic alignment, and word-choice diversity maps. Recommended daily session: 20 minutes."</span>
+              <span class="lang-de">"Ausrichtung auf grammatikalische Komplexität, Beherrschung des Konjunktivs, und Wortschatzvielfalt. Empfohlenes tägliches Training: 20 Minuten."</span>
+            </div>
+            
+            <div class="drills-board">
+              <span class="lang-en drills-title-cyan">TEST TRAINING DRILLS:</span>
+              <span class="lang-de drills-title-cyan">PRÜFUNGSVOREEREITUNGEN:</span>
+              
+              <div class="drill-row">
+                <span><span>🇬🇧</span> IELTS Academic Speaking Mock</span>
+                <span class="text-cyan-mono">Band 7.5+ Aim</span>
+              </div>
+              <div class="drill-row">
+                <span><span>🇩🇪</span> Goethe-Zertifikat B2/C1 Sprechen</span>
+                <span class="text-cyan-mono">Hohe Präzision</span>
+              </div>
+              <div class="drill-row no-border">
+                <span><span>🇬🇧</span> Academic Entrance Presentation</span>
+                <span class="text-cyan-mono">Formal Tone</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- --- 7. Testimonials Section --- -->
+    <section class="testimonials-section reveal-on-scroll" id="testimonials">
+      <div class="container">
+        
+        <div class="section-lead">
+          <div class="mono-tag mono-tag-accent2">
+            <span class="lang-en">SUCCESS STORIES</span>
+            <span class="lang-de">ERFOLGSBERICHTE</span>
+          </div>
+          <h2 class="section-title">
+            <span class="lang-en">Sought-after fluency targets.</span>
+            <span class="lang-de">Erfolge, die für sich sprechen.</span>
+          </h2>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-highlight">"Outstanding Fluency"</div>
+            <p class="testimonial-text">
+              <span class="lang-en">"Practicing with Sarah for just 2 weeks gave me the confidence to master my seed VC pitch in Berlin. The investors highlighted our communication. Outstanding platform."</span>
+              <span class="lang-de">"Zwei Wochen intensives Training mit Sarah gaben mir die Sicherheit für unseren Seed-Pitch in Berlin. Die Investoren lobten unsere Redegewandtheit ausdrücklich!"</span>
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-blue-purple">MJ</div>
+              <div class="author-info">
+                <h4>Michael J.</h4>
+                <p>Co-Founder, LernerTech • <span class="text-badge-color">🎯 Berlin, Germany</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-highlight">"Goethe C1 Cleared"</div>
+            <p class="testimonial-text">
+              <span class="lang-en">"I had immense language barriers when migrating to Essen for medical validation. Practicing dialogues daily with Dr. Elsbeth brought my hesitation rate down to zero. Cleared the exams flawlessly."</span>
+              <span class="lang-de">"Ich hatte extreme Sprechhemmungen beim Auswandern nach Essen für mein Staatsexamen. Dr. Elsbeths tägliches Training löste meine Denkblockaden auf Schlag auf. Souverän bestanden."</span>
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-purple-cyan">AP</div>
+              <div class="author-info">
+                <h4>Dr. Amira P.</h4>
+                <p>Medical Research Practitioner • <span class="text-badge-color">🎯 Essen, Germany</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-highlight">"IELTS Speaking 8.5"</div>
+            <p class="testimonial-text">
+              <span class="lang-en">"My passive reading skills were good, but speaking was stiff. The vocabulary guides pushed me from an average Band 6 directly into a professional 8.5 within 20 days of training."</span>
+              <span class="lang-de">"Meine Lesefähigkeiten waren super, aber das Sprechen stockend. Die Vokabelübungen holten mich in nur 20 Tagen auf das Elitelevel Band 8.5. Die beste Investition überhaupt!"</span>
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-orange-red">LH</div>
+              <div class="author-info">
+                <h4>Lukas H.</h4>
+                <p>Robotics Engineer, TUM • <span class="text-badge-color">🎯 Munich, Germany</span></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- --- 8. Beautiful Pricing Section --- -->
+    <section class="pricing-section reveal-on-scroll" id="pricing">
+      <div class="container">
+        
+        <div class="section-lead">
+          <div class="mono-tag mono-tag-green-light">
+            <span class="lang-en font-mono">TRANSPARENT TIERING</span>
+            <span class="lang-de font-mono">TRANSPARENTE MITGLIEDSCHAFTEN</span>
+          </div>
+          <h2 class="section-title">
+            <span class="lang-en">SaaS plans tailored for you.</span>
+            <span class="lang-de font-display">Abonnements für jeden Anspruch.</span>
+          </h2>
+          <p class="subtitle">
+            <span class="lang-en font-sans">Start practicing for free now. Upgrade anytime to receive custom boardroom lessons, vocabulary guides, or official CEFR exam scoring criteria.</span>
+            <span class="lang-de">Beginnen Sie komplett kostenfrei im Lernlabor. Schalten Sie Premium frei für exklusive Lektionen, Sprechübungen oder IELTS-Prüfungsvorbereitung.</span>
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Tier 1: Free Active Sandbox -->
+          <div class="pricing-card">
+            <div>
+              <span class="mono-tag mono-tag-dark">Active Sandbox</span>
+              <h3>Free Plan</h3>
+              <p>
+                <span class="lang-en">Access basic vocabulary guides.</span>
+                <span class="lang-de font-sans">Grundlegendes Training im Lernlabor.</span>
+              </p>
+            </div>
+
+            <div class="price-box">
+              <span class="price-num">$0</span>
+              <span class="price-sub">/ mo</span>
+            </div>
+
+            <a href="#playground" class="btn btn-secondary">
+              <span class="lang-en">Launch Playbox</span>
+              <span class="lang-de">Studio starten</span>
+            </a>
+
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">5 practice reviews / day</span>
+                  <span class="lang-de">Täglich 5 Lektionsbewertungen</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Standard pronunciation guides</span>
+                  <span class="lang-de">Standard-Vokabelübungen</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en font-sans">Advanced English &amp; German lessons</span>
+                  <span class="lang-de">Vollständige Sprachkataloge</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Specific executive scenarios</span>
+                  <span class="lang-de">Wirtschaftsthemenguides</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tier 2: PROFESSIONAL (Highlight Plan) -->
+          <div class="pricing-card premium">
+            <div class="badge-popular">
+              <span class="lang-en">Most Popular</span>
+              <span class="lang-de">Meistgewählt</span>
+            </div>
+            
+            <div>
+              <span class="mono-tag mono-tag-mb-12">Professional Track</span>
+              <h3>Pro Plan</h3>
+              <p>
+                <span class="lang-en font-sans">Our core high-impact practice engine.</span>
+                <span class="lang-de">Unser stärkstes Toolkit für Aufsteiger.</span>
+              </p>
+            </div>
+
+            <div class="price-box">
+              <span class="price-num">$19</span>
+              <span class="price-sub">/ mo</span>
+            </div>
+
+            <button class="btn btn-primary" onclick="alert('Proceeding to billing pipeline simulation!')">
+              <span class="lang-en">Accelerate Speaking Now</span>
+              <span class="lang-de">Sprechsouveränität freischalten</span>
+            </button>
+
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Unlimited dialogue practice reviews</span>
+                  <span class="lang-de">Unbegrenzte Lektionsprüfungen</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">All executive and casual scenario guides</span>
+                  <span class="lang-de">Sämtliche Guide-Szenarien</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Articulate pronunciation guides</span>
+                  <span class="lang-de">Präzise Redeflussbegleitung</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">IELTS / Goethe prep scoring tracks</span>
+                  <span class="lang-de font-sans">IELTS- &amp; Goethe-Kriterientrainings</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Custom executive boardroom prep</span>
+                  <span class="lang-de">Individuelle Gehalts- &amp; VC-Trainings</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tier 3: Premium Plans -->
+          <div class="pricing-card">
+            <div>
+              <span class="mono-tag mono-tag-dark">Global Enterprise</span>
+              <h3>Premium Plan</h3>
+              <p>
+                <span class="lang-en">For global organizations & colleges.</span>
+                <span class="lang-de">Für Hochschulen und multinationale Teams.</span>
+              </p>
+            </div>
+
+            <div class="price-box">
+              <span class="price-num">$49</span>
+              <span class="price-sub">/ mo per user</span>
+            </div>
+
+            <a href="mailto:sales@example.com" class="btn btn-secondary">
+              <span class="lang-en">Contact Enterprise Sales</span>
+              <span class="lang-de">Vertrieb kontaktieren</span>
+            </a>
+
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">SSO and workspace integration</span>
+                  <span class="lang-de">SAML Single-Sign On</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Dedicated professional tutor line</span>
+                  <span class="lang-de">Direkter Support-Kanal</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Custom industry vocabulary tables</span>
+                  <span class="lang-de">Eigene fachspezifische Wortschätze</span>
+                </span>
+              </li>
+              <li class="pricing-feature-item checked">
+                <span class="check-icon">✓</span>
+                <span>
+                  <span class="lang-en">Centralized company billing portal</span>
+                  <span class="lang-de font-sans">Sammelrechnung &amp; Teamanalysen</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- --- FAQ Section --- -->
+    <section class="faq-section reveal-on-scroll" id="faq">
+      <div class="container">
+        
+        <div class="section-lead">
+          <div class="mono-tag mono-tag-accent2">
+            <span class="lang-en">COMMON QUESTIONS</span>
+            <span class="lang-de">HÄUFIG GESTELLTE QUESTIONS</span>
+          </div>
+          <h2 class="section-title">
+            <span class="lang-en font-display">Language practice insights.</span>
+            <span class="lang-de font-display">Wissen rund um das Training.</span>
+          </h2>
+        </div>
+
+        <div class="faq-list">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>
+                <span class="lang-en">Why focus only on English and German speaking?</span>
+                <span class="lang-de">Warum fokussieren Sie sich nur auf Englisch und Deutsch?</span>
+              </h3>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="lang-en font-sans">General language platforms try to cover dozens of languages with static text matching. Dualis App focuses entirely on high-stakes business and academic English & German fluency, investing deeply in structured conversational lessons and custom vocabulary tracks for these specific goals.</span>
+                <span class="lang-de">Klassische Plattformen versuchen zu viele Sprachen gleichzeitig abzudecken. Dualis App fokussiert sich rein auf geschäftlich und akademisch anspruchsvolles Englisch und Deutsch, um die bestmöglichen, praxisorientierten Übungen anzubieten.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>
+                <span class="lang-en">Does Dualis App support custom regional accents?</span>
+                <span class="lang-de">Werden regionale Akzente unterstützt?</span>
+              </h3>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="lang-en font-sans">Yes. In English, you can select standard British (Estuary/RP), General American, and global professional accents. In German, guides support standard German (Hochdeutsch) as well as light regional variations to prepare you for actual field dialogues in Frankfurt, Berlin, or Munich.</span>
+                <span class="lang-de">Ja. Im Englischen können Sie britisches (Estuary/RP), amerikanisches oder globales Englisch wählen. Im Deutschen trainieren wir Standard-Hochdeutsch sowie landesspezifische Nuancen für Gespräche in Frankfurt, Berlin oder München.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- --- 9. Final CTA Section --- -->
+    <section class="final-cta reveal-on-scroll">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="mono-tag">
+            <span class="lang-en">GET VERBAL FREEDOM</span>
+            <span class="lang-de">REDEWENDIGKEIT ERREICHEN</span>
+          </div>
+          <h2>
+            <span class="lang-en">Ready to voice your expertise? <br>Practice completely free.</span>
+            <span class="lang-de">Bereit für Ihren souveränen Auftritt? <br>Jetzt kostenfrei trainieren.</span>
+          </h2>
+          <p class="subtitle">
+            <span class="lang-en">Join professionals worldwide securing salary increases, clearing medical or engineering milestones, and overcoming verbal stress. No credit card required.</span>
+            <span class="lang-de">Schließen Sie sich weltweiten Fachkräften an, die Gehaltssprünge erzielen und Prüfungsängste ablegen. Keine Kreditkarte erforderlich.</span>
+          </p>
+          <a href="#playground" class="btn btn-primary btn-large-padding">
+            <span class="lang-en">Open Speaking Lab</span>
+            <span class="lang-de">Sprech-Workspace starten</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 10. Footer --- -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        
+        <div class="footer-brand">
+          <a href="#hero" class="logo logo-footer-brand">
+            <span>Dualis</span><span class="logo-dot"></span><span class="text-light-font">app</span>
+          </a>
+          <p>
+            <span class="lang-en">Premium interactive language playground strictly for English and German speaking practice tracks. Built for students and professional networks.</span>
+            <span class="lang-de">Exklusives Sprach-Labor für anspruchsvolles Englisch und Deutsch. Entwickelt für Karriere, Studium und souveräne Kommunikation.</span>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>
+            <span class="lang-en">Platform</span>
+            <span class="lang-de">Plattform</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Interactive Review</a></li>
+            <li><a href="#playground" class="footer-link">Lesson Guides</a></li>
+            <li><a href="#focus" class="footer-link">Speaking Practice</a></li>
+            <li><a href="#faq" class="footer-link">Security Matrix</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>
+            <span class="lang-en">Company</span>
+            <span class="lang-de">Unternehmen</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="#how-it-works" class="footer-link">About Us</a></li>
+            <li><a href="#testimonials" class="footer-link">Startup Story</a></li>
+            <li><a href="#how-it-works" class="footer-link">Press Kit</a></li>
+            <li><a href="#testimonials" class="footer-link">Client Trust</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>
+            <span class="lang-en">Legal &amp; Trust</span>
+            <span class="lang-de">Rechtliches</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="#faq" class="footer-link">Privacy Ledger</a></li>
+            <li><a href="#pricing" class="footer-link">Terms of Service</a></li>
+            <li><a href="#faq" class="footer-link">GDPR Conformance</a></li>
+            <li><a href="#playground" class="footer-link">Study Materials</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Dualis App GmbH. All rights reserved. Made in Europe for global speakers.</p>
+        <div class="footer-bottom-links">
+          <a href="https://x.com/ShreyVarsani" class="footer-link">Twitter</a>
+          <a href="https://www.linkedin.com/in/shrey-varsani" class="footer-link">LinkedIn</a>
+          <a href="https://github.com/shrey-varsani" class="footer-link">GitHub Space</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Direct vanilla JavaScript logic inclusion -->
+    <script type="module" src="js/darkmode.js"></script>
+    <script type="module" src="js/navbar.js"></script>
+    <script type="module" src="js/counters.js"></script>
+    <script type="module" src="js/language-switch.js"></script>
+    <script type="module" src="js/animations.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
