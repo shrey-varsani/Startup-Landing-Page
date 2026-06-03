@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dualis app — Natural English & German Language Practice</title>
-    <!-- Connect styling files sequentially to ensure variable resolution -->
     <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -17,22 +16,16 @@
     <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body data-theme="en">
-    
-    <!-- Ambient glowing backgrounds -->
+
     <div class="hero-glow-layer" id="ambient-glow"></div>
 
-    <!-- MAIN APP STRUCTURE -->
-
-    <!-- --- 1. Sticky Navbar --- -->
     <header class="site-header" id="site-header">
       <div class="container nav-wrapper">
         <a href="#hero" class="logo" id="logo-link">
           <span>Dualis</span><span class="logo-light"></span>
         </a>
 
-        <!-- Premium aligned right container containing nav links and utility controls -->
         <div class="nav-right-container">
-          <!-- Navigation Links -->
           <nav class="nav-links" id="nav-links">
             <a href="#features" class="nav-link">
               <span class="lang-en">Features</span>
@@ -56,9 +49,7 @@
             </a>
           </nav>
 
-          <!-- Right Side: Switcher & Get Started -->
           <div class="nav-right">
-            <!-- Premium Language Switcher Split-Cards -->
             <div class="lang-split-selector" id="lang-toggle-box" title="Switch Language / Sprache wechseln">
               <button class="lang-card-btn active" id="btn-lang-en" data-lang="en">
                 <span class="lang-card-flag">🇬🇧</span> <span class="lang-card-name">English</span>
@@ -68,10 +59,8 @@
               </button>
             </div>
 
-            <!-- Elegant Theme Switcher (Dark/Light Toggle) -->
             <button class="theme-toggle" id="theme-toggle-btn" title="Toggle Theme / Farbschema wechseln" aria-label="Toggle theme">
               <span class="theme-toggle-thumb">
-                <!-- Custom CSS Sun Icon (Replaces Sun SVG/Emoji) -->
                 <span class="theme-icon sun-icon-css">
                   <span class="sun-core"></span>
                   <span class="sun-ray r1"></span>
@@ -83,20 +72,17 @@
                   <span class="sun-ray r7"></span>
                   <span class="sun-ray r8"></span>
                 </span>
-                <!-- Custom CSS Moon Icon (Replaces Moon SVG/Emoji) -->
                 <span class="theme-icon moon-icon-css-wrapper">
                   <span class="moon-icon-css"></span>
                 </span>
               </span>
             </button>
 
-            <!-- Get Started Navbar action button -->
             <a href="#playground" class="btn btn-primary nav-btn-start">
               <span class="lang-en">Get Started</span>
               <span class="lang-de">Loslegen</span>
             </a>
 
-            <!-- Mobile Hamburger -->
             <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
               <span class="mobile-menu-lines"></span>
             </button>
@@ -105,12 +91,9 @@
       </div>
     </header>
 
-
-    <!-- --- 2. Hero Section --- -->
     <section class="hero-section" id="hero">
       <div class="container hero-grid">
-        
-        <!-- Hero Details (Babbel inspired layout structure) -->
+
         <div class="hero-content">
           <div class="mono-tag" id="hero-badge">
             <span class="lang-en">🇬🇧 CONVERSATION PRACTICE ACTIVE</span>
@@ -139,7 +122,6 @@
           </div>
         </div>
 
-        <!-- Right Side: Clean flat illustration from user -->
         <div class="hero-illustration-container">
           <img src="src/assets/images/hero_learning_image_1779598247164.png" referrerPolicy="no-referrer" alt="English and German speaking practice" />
         </div>
@@ -147,7 +129,6 @@
       </div>
     </section>
 
-    <!-- --- Warmup Speaking Lab Section --- -->
     <section class="warmup-lab-section reveal-on-scroll">
       <div class="container">
         <div class="warmup-header">
@@ -160,8 +141,7 @@
             <span class="lang-de">Willkommen im Sprechlabor! Wählen Sie eine Antwort unten, um Ihren Redefluss zu testen</span>
           </h3>
         </div>
-        
-        <!-- Modern interactive speaking app mockup -->
+
         <div class="hero-interactive-card" id="hero-mic-widget">
           <div class="card-glares"></div>
           
@@ -182,11 +162,10 @@
                   <span class="lang-en">LIVE TUTOR ONLINE</span>
                   <span class="lang-de">LEHRER ONLINE</span>
                 </div>
-              </div> <!-- End coach-info -->
-            </div> <!-- End coach-pfp-wrapper -->
-          </div> <!-- End card-header-badge -->
+              </div>
+            </div>
+          </div>
 
-          <!-- Dialog Output Bubble -->
           <div class="sim-chat-box">
             <div class="sim-message" id="hero-dialogue-bubble">
               <span class="lang-en">"Welcome to your speaking warmup! Select an option below to practice talking with your tutor."</span>
@@ -195,7 +174,6 @@
             <div class="sim-timestamp" id="hero-dialogue-time">UTC 07:20</div>
           </div>
 
-          <!-- Quick interactive input prompts -->
           <div class="user-interaction-panel">
             <div class="interaction-label">
               <span class="lang-en">Respond to Tutor (Practice Dialogue)</span>
@@ -203,11 +181,9 @@
             </div>
             
             <div class="prompts-scaffold-container" id="hero-prompts-scaffold">
-              <!-- Content injected via main.js depending on selected language -->
             </div>
           </div>
 
-          <!-- Analytical phonetic diagnostics overlay -->
           <div class="phonetic-feedback-board" id="hero-feedback-overlay">
             <div class="feedback-meta">
               <div class="mono-tag mono-tag-compact">
@@ -218,7 +194,6 @@
             </div>
 
             <div class="text-phoneme-correction" id="hero-diagnostics-text">
-              <!-- Diagnostics summary markup injected here -->
             </div>
 
             <div class="scores-row">
@@ -250,13 +225,10 @@
       </div>
     </section>
 
-
-    <!-- --- 3. Statistics Section --- -->
     <section class="stats-section reveal-on-scroll">
       <div class="container">
         <div class="stats-grid">
-          
-          <!-- Card 1: Active Learners -->
+
           <div class="stat-card">
             <div class="stat-ring-overlay"></div>
             <div class="stat-number" data-target="1248322" data-suffix="+">1,248,322+</div>
@@ -270,7 +242,6 @@
             </p>
           </div>
 
-          <!-- Card 2: Speaking Confidence -->
           <div class="stat-card">
             <div class="stat-ring-overlay"></div>
             <div class="stat-number" data-target="98.6" data-suffix="%">98.6%</div>
@@ -284,7 +255,6 @@
             </p>
           </div>
 
-          <!-- Card 3: Success Rate -->
           <div class="stat-card">
             <div class="stat-ring-overlay"></div>
             <div class="stat-number" data-target="99.2" data-suffix="%">99.2%</div>
@@ -302,8 +272,6 @@
       </div>
     </section>
 
-
-    <!-- --- Logo Wall (Trust Section Alignment) --- -->
     <section class="trust-section reveal-on-scroll">
       <div class="container">
         <h2 class="trust-title">
@@ -320,11 +288,8 @@
       </div>
     </section>
 
-    <!-- Animated premium language-themed line separating trust section & features -->
     <div class="animated-gradient-line"></div>
 
-
-    <!-- --- 4. Beautiful Features Section --- -->
     <section class="features-section reveal-on-scroll" id="features">
       <div class="container">
         <div class="section-lead-split">
@@ -345,10 +310,8 @@
 
           <div class="section-lead-artwork">
             <div class="artwork-container">
-              <!-- Backdrop Circle -->
               <div class="html-backdrop-circle"></div>
 
-              <!-- Floating Badges EN and DE -->
               <div class="html-lang-badge-de">
                 <div class="flag">
                   <span class="flag-black"></span>
@@ -366,13 +329,10 @@
                 <div class="html-lang-en-code">EN</div>
               </div>
 
-              <!-- Floating Speech Bubbles -->
               <div class="html-speech-left">Hallo!</div>
               <div class="html-speech-right">Hey!</div>
 
-              <!-- Main character sitting at the desk -->
               <div class="html-student-boy">
-                <!-- Outer Torso Jackets and Sweaters -->
                 <div class="html-boy-torso">
                   <div class="html-boy-vest"></div>
                   <div class="html-boy-sweater">
@@ -386,7 +346,6 @@
                   </div>
                 </div>
 
-                <!-- Neck and Head -->
                 <div class="html-boy-neck"></div>
                 <div class="html-head-wrapper">
                   <div class="html-boy-hair"></div>
@@ -409,7 +368,6 @@
                   </div>
                 </div>
 
-                <!-- Hands holding Red Smartphone -->
                 <div class="html-smartphone-held">
                   <div class="phone-camera"></div>
                   <div class="phone-screen">
@@ -419,7 +377,6 @@
                   </div>
                 </div>
 
-                <!-- Hand Overlay Elements -->
                 <div class="html-hand-left">
                   <span class="palm"></span>
                   <div class="knuckles">
@@ -439,10 +396,8 @@
                 </div>
               </div>
 
-              <!-- Wooden Desk Surface -->
               <div class="html-desk-surface"></div>
 
-              <!-- Desk Props: Notebook, Pencils, MP3 Player -->
               <div class="html-desk-notebook">
                 <div class="spine"></div>
                 <div class="rings">
@@ -471,7 +426,6 @@
         </div>
 
         <div class="bento-grid">
-          <!-- Card 1: Pronunciation Feedback -->
           <div class="bento-card col-span-2">
             <div class="bento-icon-box">
               🎙️
@@ -505,7 +459,6 @@
             </div>
           </div>
 
-          <!-- Card 2: Grammar & Vocabulary Builder -->
           <div class="bento-card">
             <div class="bento-icon-box">
               💬
@@ -522,7 +475,6 @@
             </div>
           </div>
 
-          <!-- Card 3: Beginner-Friendly Lessons -->
           <div class="bento-card">
             <div class="bento-icon-box">
               🕒
@@ -539,7 +491,6 @@
             </div>
           </div>
 
-          <!-- Card 4: Career & Interview Training -->
           <div class="bento-card">
             <div class="bento-icon-box">
               💼
@@ -556,7 +507,6 @@
             </div>
           </div>
 
-          <!-- Card 5: Interactive Language Guides -->
           <div class="bento-card col-span-2">
             <div class="bento-icon-box">
               👥
@@ -572,10 +522,8 @@
               </p>
             </div>
             
-            <!-- Immserive visual progress tracker -->
             <div class="bento-illustration-tray">
               <div class="progress-trajectory-board">
-                <!-- Level 1 -->
                 <div class="trajectory-step">
                   <div class="step-marker marker-blue"></div>
                   <div class="step-text">
@@ -583,9 +531,7 @@
                     <div class="step-desc">Foundational: 65%</div>
                   </div>
                 </div>
-                <!-- Connector 1 -->
                 <div class="trajectory-line line-purple"></div>
-                <!-- Level 2 -->
                 <div class="trajectory-step">
                   <div class="step-marker marker-purple"></div>
                   <div class="step-text">
@@ -593,9 +539,7 @@
                     <div class="step-desc">Conversational: 85%</div>
                   </div>
                 </div>
-                <!-- Connector 2 -->
                 <div class="trajectory-line line-green"></div>
-                <!-- Level 3 -->
                 <div class="trajectory-step active">
                   <div class="step-marker marker-green highlight-pulse"></div>
                   <div class="step-text">
@@ -610,12 +554,9 @@
       </div>
     </section>
 
-
-    <!-- --- 5. Conversation Practice Section --- -->
     <section class="conversation-practice-section reveal-on-scroll" id="conversation-practice">
       <div class="container conversation-split-layout">
         
-        <!-- Left details -->
         <div class="pivot-content-holder no-margin">
           <div class="mono-tag mono-tag-accent2">
             <span class="lang-en">ENGLISH ↔ GERMAN FLOW</span>
@@ -652,12 +593,10 @@
           </div>
         </div>
 
-        <!-- Right Side: Beautiful Interactive Discourse Illustration box -->
         <div class="illustration-workspace">
           <div class="card-glares"></div>
           <div class="illustration-flow-line"></div>
           
-          <!-- English bubble -->
           <div class="bubble-row-left">
             <div class="speech-bubble-illustrative english-side">
               <span class="bubble-badge-en">🇬🇧 SPEAKER INSIGHT</span>
@@ -669,7 +608,6 @@
             </div>
           </div>
 
-          <!-- Sentence Transition Connector bubble -->
           <div class="speech-bubble-illustrative ai-flow">
             <span class="bubble-badge-ai">💬 SENTENCE TRANSITION CHECK</span>
             <div class="bubble-text-styled">
@@ -678,7 +616,6 @@
             </div>
           </div>
 
-          <!-- German bubble -->
           <div class="bubble-row-right">
             <div class="speech-bubble-illustrative german-side">
               <span class="bubble-badge-de">🇩🇪 DEUTSCHE STRUKTUR</span>
@@ -694,8 +631,6 @@
       </div>
     </section>
 
-
-    <!-- --- 6. How It Works Section --- -->
     <section class="how-it-works-section reveal-on-scroll" id="how-it-works">
       <div class="container">
         
@@ -705,7 +640,6 @@
             <span class="lang-de">4 EINFACHE SCHRITTE</span>
           </div>
           
-          <!-- Library Idioms Banner Image -->
           <div class="journey-banner-container">
             <img src="src/assets/images/idioms_library_banner_1779598869360.png" referrerPolicy="no-referrer" alt="Academic library language learning idioms" />
           </div>
@@ -722,7 +656,6 @@
 
         <div class="steps-timeline-horizontal">
           
-          <!-- Step 1: Choose Language -->
           <div class="step-item">
             <div class="step-badge">
               01
@@ -738,7 +671,6 @@
             </p>
           </div>
 
-          <!-- Step 2: Practice Speaking -->
           <div class="step-item">
             <div class="step-badge">
               02
@@ -754,7 +686,6 @@
             </p>
           </div>
 
-          <!-- Step 3: Practice & Review -->
           <div class="step-item">
             <div class="step-badge">
               03
@@ -770,7 +701,6 @@
             </p>
           </div>
 
-          <!-- Step 4: Speak Fluently -->
           <div class="step-item">
             <div class="step-badge">
               04
@@ -791,8 +721,6 @@
       </div>
     </section>
 
-
-    <!-- --- Interactive Conversational Coaching Workspace (The Language Lab) --- -->
     <section class="playground-section reveal-on-scroll" id="playground">
       <div class="container">
         <div class="section-lead">
@@ -815,7 +743,6 @@
 
         <div class="playground-grid">
           
-          <!-- Column 1: Selector Panel -->
           <div class="playground-selector-panel">
             
             <div class="playground-coach-tier">
@@ -829,14 +756,11 @@
               </button>
             </div>
 
-            <!-- Coaches list layout inside Bento border row -->
             <div class="coaches-list-bento" id="coaches-list-target">
-              <!-- Dynamically rendered via main.js depending on tab and language preference -->
             </div>
 
           </div>
 
-          <!-- Column 2: Immersive Lab Screen -->
           <div class="classroom-canvas-panel" id="immersive-coaching-box">
             <div class="card-glares"></div>
             
@@ -848,7 +772,6 @@
               </div>
             </div>
 
-            <!-- Chat screen terminal details -->
             <div class="sim-chat-box">
               <div class="sim-message" id="pm-response-text">
                 <span class="lang-en">"Hello student! I'm ready. Choose your tutor, click on a reply prompt below to select your speaking response, and review helpful study tips."</span>
@@ -857,7 +780,6 @@
               <div class="sim-timestamp" id="pm-time">Interactive session active. Ready to practice.</div>
             </div>
 
-            <!-- Mic Trigger Button -->
             <div class="mic-pulse-rings" id="pm-mic-scaffold">
               <button class="mic-activation-btn" id="pm-mic-btn" title="Simulate vocal input">
                 🎙️
@@ -877,7 +799,6 @@
               <div class="amplitude-pixel"></div>
             </div>
 
-            <!-- Input Choices for Interactive Experience in detailed playground -->
             <div class="user-interaction-panel" id="playground-prompts-container">
               <div class="interaction-label">
                 <span class="lang-en">Respond in Audio (Click prompt to simulate speaking)</span>
@@ -885,11 +806,9 @@
               </div>
               
               <div id="playground-prompts-scaffold">
-                <!-- prompts go here dynamically -->
               </div>
             </div>
 
-            <!-- Immediate feedback card overlay -->
             <div class="phonetic-feedback-board" id="pm-feedback-report">
               <div class="feedback-meta-row">
                 <span class="mono-tag mono-tag-success">
@@ -900,10 +819,8 @@
               </div>
 
               <div class="text-phoneme-correction" id="pm-diagnostics-body">
-                <!-- diagnostics summary goes here -->
               </div>
 
-              <!-- Score values display grid -->
               <div class="scores-row">
                 <div class="score-chip">
                   <span class="score-num" id="pm-stats-fluency">95%</span>
@@ -926,8 +843,6 @@
       </div>
     </section>
 
-
-    <!-- --- Target Audience / Persona Pivot Tracks --- -->
     <section class="tabs-section reveal-on-scroll" id="focus">
       <div class="container">
         
@@ -955,7 +870,6 @@
           </div>
         </div>
 
-        <!-- Panel 1: Professionals -->
         <div class="pivot-panel-box active" id="pivot-panel-pro">
           <div class="pivot-content-holder">
             <h3>
@@ -1025,7 +939,6 @@
           </div>
         </div>
 
-        <!-- Panel 2: Students -->
         <div class="pivot-panel-box" id="pivot-panel-stu">
           <div class="pivot-content-holder">
             <h3>
@@ -1099,8 +1012,6 @@
       </div>
     </section>
 
-
-    <!-- --- 7. Testimonials Section --- -->
     <section class="testimonials-section reveal-on-scroll" id="testimonials">
       <div class="container">
         
@@ -1120,7 +1031,6 @@
 
         <div class="testimonials-grid">
           
-          <!-- Card 1 -->
           <div class="testimonial-card">
             <div class="testimonial-highlight">"Outstanding Fluency"</div>
             <p class="testimonial-text">
@@ -1136,7 +1046,6 @@
             </div>
           </div>
 
-          <!-- Card 2 -->
           <div class="testimonial-card">
             <div class="testimonial-highlight">"Goethe C1 Cleared"</div>
             <p class="testimonial-text">
@@ -1152,7 +1061,6 @@
             </div>
           </div>
 
-          <!-- Card 3 -->
           <div class="testimonial-card">
             <div class="testimonial-highlight">"IELTS Speaking 8.5"</div>
             <p class="testimonial-text">
@@ -1173,8 +1081,6 @@
       </div>
     </section>
 
-
-    <!-- --- 8. Beautiful Pricing Section --- -->
     <section class="pricing-section reveal-on-scroll" id="pricing">
       <div class="container">
         
@@ -1195,7 +1101,6 @@
 
         <div class="pricing-grid">
           
-          <!-- Tier 1: Free Active Sandbox -->
           <div class="pricing-card">
             <div>
               <span class="mono-tag mono-tag-dark">Active Sandbox</span>
@@ -1248,7 +1153,6 @@
             </ul>
           </div>
 
-          <!-- Tier 2: PROFESSIONAL (Highlight Plan) -->
           <div class="pricing-card premium">
             <div class="badge-popular">
               <span class="lang-en">Most Popular</span>
@@ -1313,7 +1217,6 @@
             </ul>
           </div>
 
-          <!-- Tier 3: Premium Plans -->
           <div class="pricing-card">
             <div>
               <span class="mono-tag mono-tag-dark">Global Enterprise</span>
@@ -1370,8 +1273,6 @@
       </div>
     </section>
 
-
-    <!-- --- FAQ Section --- -->
     <section class="faq-section reveal-on-scroll" id="faq">
       <div class="container">
         
@@ -1425,8 +1326,6 @@
       </div>
     </section>
 
-
-    <!-- --- 9. Final CTA Section --- -->
     <section class="final-cta reveal-on-scroll">
       <div class="container">
         <div class="cta-banner">
@@ -1450,7 +1349,6 @@
       </div>
     </section>
 
-    <!-- --- 10. Footer --- -->
     <footer class="site-footer">
       <div class="container footer-grid">
         
@@ -1515,7 +1413,6 @@
       </div>
     </footer>
 
-    <!-- Direct vanilla JavaScript logic inclusion -->
     <script type="module" src="js/darkmode.js"></script>
     <script type="module" src="js/navbar.js"></script>
     <script type="module" src="js/counters.js"></script>

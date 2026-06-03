@@ -128,7 +128,7 @@ img, video, canvas, svg {
     gap: 12px !important;
   }
   .nav-links {
-    display: flex !important; /* Ensure block model exists, toggle via opacity & pointer-events */
+    display: flex !important;
     position: fixed !important;
     top: 72px !important;
     left: 16px !important;
