@@ -2,6 +2,11 @@
 
 Dualis is a premium, interactive landing page designed for mastering spoken English and German naturally. This project is built to showcase a high-fidelity user experience for professional language learners.
 
+## Live Demo
+
+You can explore the live application here:
+**[dualis-eng-deu.vercel.app](https://dualis-eng-deu.vercel.app)**
+
 ### Core Technologies
 
 - **HTML5**: Semantic structure and accessible content.
