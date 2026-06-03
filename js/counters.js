@@ -8,10 +8,8 @@ export function animateValue(obj, start, end, duration, suffix) {
     const value = progress * (end - start) + start;
 
     if (end % 1 !== 0) {
-      // Float numbers like 98.6
       obj.innerHTML = value.toFixed(1) + suffix;
     } else {
-      // Integer numbers like 1,248,322
       obj.innerHTML = Math.floor(value).toLocaleString("en-US") + suffix;
     }
     if (progress < 1) {
@@ -31,7 +29,6 @@ export function initScrollRevealAndCounters() {
         if (entry.isIntersecting) {
           entry.target.classList.add("revealed");
 
-          // Sibling card scan
           const stats = entry.target.querySelectorAll(".stat-number");
           stats.forEach((statEl) => {
             if (statEl.getAttribute("data-animated") !== "true") {
@@ -44,7 +41,6 @@ export function initScrollRevealAndCounters() {
             }
           });
 
-          // Element itself trigger
           if (entry.target.classList.contains("stat-number")) {
             if (entry.target.getAttribute("data-animated") !== "true") {
               entry.target.setAttribute("data-animated", "true");

@@ -23,14 +23,11 @@ let amplitudeInterval = null;
 function drawWaves() {
   if (!canvas || !ctx) return;
 
-  // Clear canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Read current display dimensions
   const width = canvas.width;
   const height = canvas.height;
 
-  // Track color theme from CSS classes dynamically
   const isGerman = getLanguage() === "de";
   const primaryColor = isGerman
     ? "rgba(185, 28, 28, 0.4)"
@@ -39,7 +36,6 @@ function drawWaves() {
     ? "rgba(212, 160, 23, 0.2)"
     : "rgba(139, 92, 246, 0.18)";
 
-  // Draw 3 layers of overlaying curves
   const curves = [
     {
       amplitude: isHeroTalking ? 24 : 6,
@@ -110,7 +106,6 @@ function startAmplitudeSimulation() {
 
   amplitudeInterval = setInterval(() => {
     pixels.forEach((pixel) => {
-      // Create organic bouncing vocal amplitudes
       const shouldActivate = Math.random() > 0.45;
       pixel.classList.toggle("active", shouldActivate);
     });
@@ -167,7 +162,6 @@ export function renderHeroPrompts() {
 function simulateHeroExchange(prompt) {
   isHeroTalking = true;
 
-  // Audio state visual feedback
   const statusEl = document.getElementById("visualizer-status-text");
   const dialogueEl = document.getElementById("hero-dialogue-bubble");
   const feedbackOverlay = document.getElementById("hero-feedback-overlay");
@@ -188,7 +182,6 @@ function simulateHeroExchange(prompt) {
         : '"Sprech-Simulation aktiv... verarbeite Lautbildung."';
   }
 
-  // Simulation timeline
   setTimeout(() => {
     isHeroTalking = false;
 
@@ -203,7 +196,6 @@ function simulateHeroExchange(prompt) {
       dialogueEl.innerHTML = `"${prompt.response}"`;
     }
 
-    // Populate feedback overlays
     const diagnosticsText = document.getElementById("hero-diagnostics-text");
     const fluencyEl = document.getElementById("hero-score-fluency");
     const accentEl = document.getElementById("hero-score-accent");
@@ -235,7 +227,6 @@ export function renderPlaygroundWorkspace() {
 
   listTarget.innerHTML = "";
 
-  // Draw bento style selection items
   filtered.forEach((coach, index) => {
     const isActive = coach.id === selectedCoachId;
     const item = document.createElement("div");
@@ -268,7 +259,6 @@ export function renderPlaygroundWorkspace() {
     listTarget.appendChild(item);
   });
 
-  // Ensure selected coach is synchronized on render change
   const currentCoach =
     COACHES_DB.find((c) => c.id === selectedCoachId) || filtered[0];
   if (currentCoach) {
@@ -282,7 +272,6 @@ export function renderPlaygroundWorkspace() {
 function selectCoach(coachId) {
   selectedCoachId = coachId;
 
-  // Highlight visually
   const rows = document.querySelectorAll(
     "#coaches-list-target .coach-item-row",
   );
@@ -321,10 +310,8 @@ function updateImmersiveClassroom(coach) {
     responseText.innerHTML = `"${lang === "en" ? coach.greetingEn : coach.greetingDe}"`;
   }
 
-  // Clear previous reports immediately
   if (feedbackReport) feedbackReport.style.display = "none";
 
-  // Render selection options list
   if (promptScaffold) {
     promptScaffold.innerHTML = "";
     const prompts = coach.prompts[lang] || [];
@@ -367,7 +354,6 @@ function executeClassroomExchange(prompt) {
 
   if (feedbackReport) feedbackReport.style.display = "none";
 
-  // Toggle active styling
   if (micBtn) {
     micBtn.innerHTML = "⚡";
     micBtn.style.animation = "pulse-green-glow 0.8s infinite";
@@ -380,7 +366,6 @@ function executeClassroomExchange(prompt) {
         : '<em>"Vektoranalyse der Tonspur... bewerte syntaktische Komplexität..."</em>';
   }
 
-  // Deactivate other inputs
   if (promptScaffold) {
     const btns = promptScaffold.querySelectorAll(".prompt-choice");
     btns.forEach((b) => {
@@ -389,7 +374,6 @@ function executeClassroomExchange(prompt) {
     });
   }
 
-  // Run bouncing volume visualizer
   startAmplitudeSimulation();
 
   setTimeout(() => {
@@ -405,7 +389,6 @@ function executeClassroomExchange(prompt) {
       responseText.innerHTML = `"${prompt.response}"`;
     }
 
-    // Populate feedback parameters
     const diagnosticsBody = document.getElementById("pm-diagnostics-body");
     const flu = document.getElementById("pm-stats-fluency");
     const acc = document.getElementById("pm-stats-accent");
@@ -423,7 +406,6 @@ function executeClassroomExchange(prompt) {
       feedbackReport.classList.add("fade-in-switch");
     }
 
-    // Restore interactive prompts
     if (promptScaffold) {
       const btns = promptScaffold.querySelectorAll(".prompt-choice");
       btns.forEach((b) => {
@@ -438,7 +420,6 @@ function executeClassroomExchange(prompt) {
  * Global App Initialization
  */
 export function initAnimations() {
-  // Setup wave canvas drawing elements
   canvas = document.getElementById("hero-wave-canvas");
   if (canvas) {
     ctx = canvas.getContext("2d");
@@ -447,7 +428,6 @@ export function initAnimations() {
     drawWaves();
   }
 
-  // Establish Corporate/Social tab selectors in classroom view
   const tabPro = document.getElementById("playground-tab-pro");
   const tabCasual = document.getElementById("playground-tab-casual");
 
@@ -458,7 +438,6 @@ export function initAnimations() {
       tabPro.classList.add("active");
       tabCasual.classList.remove("active");
 
-      // Auto switch default coach when changing tabs to prevent state overlap
       selectedCoachId = "sarah";
       renderPlaygroundWorkspace();
     });
@@ -474,13 +453,11 @@ export function initAnimations() {
     });
   }
 
-  // Make the mic button respond organically by simulating a prompt submission
   const pmMicBtn = document.getElementById("pm-mic-btn");
   if (pmMicBtn) {
     pmMicBtn.addEventListener("click", () => {
       if (isPlaygroundTalking) return;
 
-      // Run speaking on the first available prompt option in current list
       const firstPromptBtn = document.querySelector(
         "#playground-prompts-scaffold .prompt-choice",
       );

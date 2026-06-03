@@ -10,11 +10,9 @@ export function initPivotTracks() {
       const pivotValue = btn.getAttribute("data-pivot");
       if (!pivotValue) return;
 
-      // Toggle active states on buttons
       tabButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // Toggle active states on panels
       panels.forEach((panel) => {
         if (panel.id === `pivot-panel-${pivotValue}`) {
           panel.classList.add("active");

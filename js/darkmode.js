@@ -1,8 +1,6 @@
-/* ==========================================================================
-   DARKMODE MODULE
-   ========================================================================== */
+/* DARKMODE MODULE */
 
-let currentAppearance = 'dark';
+let currentAppearance = "dark";
 let themeToggleBtn = null;
 
 export function getAppearance() {
@@ -11,35 +9,34 @@ export function getAppearance() {
 
 export function setAppearanceMode(appearance, savePreference = true) {
   currentAppearance = appearance;
-  document.body.setAttribute('data-appearance', appearance);
-  
-  // Update canvas background glow also
-  const ambientGlow = document.getElementById('ambient-glow');
+  document.body.setAttribute("data-appearance", appearance);
+
+  const ambientGlow = document.getElementById("ambient-glow");
   if (ambientGlow) {
-    ambientGlow.style.background = 'var(--hero-glow-grad)';
+    ambientGlow.style.background = "var(--hero-glow-grad)";
   }
 
   if (savePreference) {
-    localStorage.setItem('sprechen-appearance', appearance);
+    localStorage.setItem("sprechen-appearance", appearance);
   }
 }
 
 export function toggleAppearance() {
-  const nextAppearance = currentAppearance === 'dark' ? 'light' : 'dark';
+  const nextAppearance = currentAppearance === "dark" ? "light" : "dark";
   setAppearanceMode(nextAppearance);
 }
 
 export function initDarkMode() {
-  themeToggleBtn = document.getElementById('theme-toggle-btn');
-  
-  const savedAppearance = localStorage.getItem('sprechen-appearance');
-  if (savedAppearance === 'light' || savedAppearance === 'dark') {
+  themeToggleBtn = document.getElementById("theme-toggle-btn");
+
+  const savedAppearance = localStorage.getItem("sprechen-appearance");
+  if (savedAppearance === "light" || savedAppearance === "dark") {
     setAppearanceMode(savedAppearance, false);
   } else {
-    setAppearanceMode('dark', false); // default mode
+    setAppearanceMode("dark", false);
   }
 
   if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', toggleAppearance);
+    themeToggleBtn.addEventListener("click", toggleAppearance);
   }
 }
