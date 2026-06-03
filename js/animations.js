@@ -1,10 +1,8 @@
-/* ==========================================================================
-   ANIMATIONS & HIGH-FIDELITY INTERACTION CONTROLLER
-   ========================================================================== */
+/* ANIMATIONS & HIGH-FIDELITY INTERACTION CONTROLLER */
 
 import { COACHES_DB, getLanguage } from "./language-switch.js";
 
-// --- Global Animation States ---
+/* Global Animation States */
 let isHeroTalking = false;
 let isPlaygroundTalking = false;
 let activeTab = "pro"; // 'pro' or 'casual'

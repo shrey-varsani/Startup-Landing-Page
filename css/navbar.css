@@ -1,8 +1,5 @@
-/* ==========================================================================
-   NAVBAR: HEADER & NAVIGATION LINK STYLING & LANGUAGE SWITCHER
-   ========================================================================== */
+/* NAVBAR: HEADER & NAVIGATION LINK STYLING & LANGUAGE SWITCHER */
 
-/* --- Header & Navigation --- */
 .site-header {
   position: fixed;
   top: 0;
@@ -11,8 +8,8 @@
   z-index: 100;
   padding: 20px 0;
   background-color: var(--color-navbar-bg);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   transition: padding var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
@@ -101,7 +98,6 @@
   gap: 16px;
 }
 
-/* --- Premium Language Switcher Split-Cards --- */
 .lang-split-selector {
   display: flex;
   gap: 10px;
@@ -110,8 +106,8 @@
 
 .lang-card-btn {
   background: var(--color-surface);
+    -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   display: flex;
@@ -153,7 +149,6 @@
   font-weight: 600;
 }
 
-/* Hover lift effect */
 .lang-card-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -165,14 +160,12 @@
   transform: scale(1.15) rotate(4deg);
 }
 
-/* Active Card */
 .lang-card-btn.active {
   color: var(--color-text-primary);
   transform: scale(1.05) translateY(-1px);
   opacity: 1 !important;
 }
 
-/* English Theme Colors */
 #btn-lang-en.active {
   background: rgba(59, 130, 246, 0.12);
   border-color: rgba(59, 130, 246, 0.45);
@@ -193,7 +186,6 @@ body[data-appearance="light"] #btn-lang-en.active:hover {
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.18);
 }
 
-/* German Theme Colors */
 #btn-lang-de.active {
   background: rgba(220, 38, 38, 0.1);
   border-color: rgba(220, 38, 38, 0.45);
@@ -214,7 +206,6 @@ body[data-appearance="light"] #btn-lang-de.active:hover {
   box-shadow: 0 4px 12px rgba(220, 38, 38, 0.15);
 }
 
-/* Inactive Card */
 .lang-card-btn:not(.active) {
   opacity: 0.6;
   border-color: rgba(255, 255, 255, 0.06);
@@ -225,7 +216,6 @@ body[data-appearance="light"] .lang-card-btn:not(.active) {
   border-color: rgba(0, 0, 0, 0.08);
 }
 
-/* --- Mobile Menu Button --- */
 .mobile-menu-btn {
   display: none;
   background: transparent;
@@ -236,7 +226,6 @@ body[data-appearance="light"] .lang-card-btn:not(.active) {
   z-index: 101;
 }
 
-/* Mobile Hamburger Menu icon animation */
 .mobile-menu-lines {
   position: relative;
   display: block;
@@ -265,9 +254,7 @@ body[data-appearance="light"] .lang-card-btn:not(.active) {
   bottom: -6px;
 }
 
-/* ==========================================================================
-   LAPTOP / DESKTOP EXPLICIT PREMIUM LAYOUT
-   ========================================================================== */
+/* LAPTOP / DESKTOP EXPLICIT PREMIUM LAYOUT */
 @media (min-width: 1025px) {
   .site-header .container.nav-wrapper {
     max-width: 100% !important;
@@ -281,7 +268,7 @@ body[data-appearance="light"] .lang-card-btn:not(.active) {
   .nav-right-container {
     display: flex !important;
     align-items: center !important;
-    gap: 28px !important; /* Premium generous gap between links and action bar */
+    gap: 28px !important;
     flex-grow: 0 !important;
   }
 
@@ -313,4 +300,3 @@ body[data-appearance="light"] .lang-card-btn:not(.active) {
 .site-footer .logo {
   margin-bottom: 12px;
 }
-

@@ -1,8 +1,6 @@
-/* ==========================================================================
-   LANGUAGE ACTION MODULE
-   ========================================================================== */
+/* LANGUAGE ACTION MODULE */
 
-// --- High-Fidelity Pre-Populated Coaches Database ---
+/* High-Fidelity Pre-Populated Coaches Database */
 export const COACHES_DB = [
   {
     id: "sarah",
@@ -213,7 +211,6 @@ export function setLanguageMode(lang) {
   currentLang = lang;
   document.body.setAttribute("data-theme", lang);
 
-  // Transition glowing background accents using custom properties
   const ambientGlow = document.getElementById("ambient-glow");
   if (
     ambientGlow &&
@@ -224,13 +221,11 @@ export function setLanguageMode(lang) {
     ambientGlow.style.background = "var(--hero-glow-grad)";
   }
 
-  // Redraw language controls pill placement
   if (btnLangEn && btnLangDe) {
     btnLangEn.classList.toggle("active", lang === "en");
     btnLangDe.classList.toggle("active", lang === "de");
   }
 
-  // Trigger smooth DOM text fade on language-gated elements
   const languageGatedItems = document.querySelectorAll(".lang-en, .lang-de");
   languageGatedItems.forEach((item) => {
     item.classList.remove("fade-in-switch");
@@ -238,7 +233,6 @@ export function setLanguageMode(lang) {
     item.classList.add("fade-in-switch");
   });
 
-  // Set default welcome message on language swap
   if (heroDialogueBubble) {
     heroDialogueBubble.innerHTML =
       lang === "en"
@@ -247,7 +241,6 @@ export function setLanguageMode(lang) {
     if (heroFeedbackOverlay) heroFeedbackOverlay.style.display = "none";
   }
 
-  // Invoke subscribers
   languageChangeCallbacks.forEach((cb) => cb(lang));
 }
 
@@ -264,7 +257,6 @@ export function initLanguageSwitcher() {
     btnLangDe.addEventListener("click", () => setLanguageMode("de"));
   }
 
-  // Double trigger on segmented controller outer frame clicks
   const toggleBox = document.getElementById("lang-toggle-box");
   if (toggleBox) {
     toggleBox.addEventListener("click", (e) => {

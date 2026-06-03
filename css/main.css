@@ -1,6 +1,4 @@
-/* ==========================================================================
-   MAIN: CENTRAL BASE RESET, TYPOGRAPHY, CONTAINER, AND COMPOSED STYLES
-   ========================================================================== */
+/* MAIN: CENTRAL BASE RESET, TYPOGRAPHY, CONTAINER, AND COMPOSED STYLES */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Finlandica:ital,wght@0,400..700;1,400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
@@ -10,7 +8,6 @@
   --font-finlandica: 'Finlandica', sans-serif;
   --font-iosevka-charon: 'Iosevka Charon', 'Iosevka', 'JetBrains Mono', monospace;
 
-  /* Classic/base references */
   --font-sans: var(--font-tinos);
   --font-display: var(--font-google-sans);
   --font-subsection: var(--font-finlandica);
@@ -26,7 +23,6 @@
   --transition-fast: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Base resets & styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +50,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -72,7 +67,6 @@ body {
   background: rgba(255, 255, 255, 0.5) !important;
 }
 
-/* Language Visibility Toggles */
 body[data-theme="en"] .lang-de {
   display: none !important;
 }
@@ -80,7 +74,6 @@ body[data-theme="de"] .lang-en {
   display: none !important;
 }
 
-/* Layout Containers */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -88,7 +81,6 @@ body[data-theme="de"] .lang-en {
   padding: 0 24px;
 }
 
-/* Typography Helpers */
 h1, h2 {
   font-family: var(--font-google-sans);
   font-weight: 700;
@@ -142,7 +134,6 @@ h4, h5 {
   border: 1px solid rgba(var(--color-accent-rgb-2), 0.1);
 }
 
-/* FAQ Dropdowns (Accordions) */
 .faq-section {
   padding: 100px 0;
 }
@@ -217,7 +208,6 @@ h4, h5 {
   line-height: 1.6;
 }
 
-/* Trust / Logo Wall */
 .trust-section {
   padding: 40px 0;
   border-top: 1px solid var(--color-border);
@@ -262,7 +252,6 @@ h4, h5 {
   border-radius: 2px;
 }
 
-/* Statistics Section */
 .stats-section {
   padding: 80px 0;
   position: relative;
@@ -333,7 +322,6 @@ h4, h5 {
   animation: rotate-dashed 20s linear infinite;
 }
 
-/* How It Works Section */
 .how-it-works-section {
   padding: 120px 0;
   position: relative;
@@ -437,7 +425,6 @@ h4, h5 {
   font-size: 1.05rem !important;
 }
 
-/* Import all remaining sub-styles */
 @import "themes.css";
 @import "animations.css";
 @import "navbar.css";

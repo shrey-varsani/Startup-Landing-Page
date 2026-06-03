@@ -1,6 +1,4 @@
-/* ==========================================================================
-   PIVOT TARGET TRACKS TAB MODULE
-   ========================================================================== */
+/* PIVOT TARGET TRACKS TAB MODULE */
 export function initPivotTracks() {
   const tabButtons = document.querySelectorAll(".pivot-tab-btn");
   const panels = document.querySelectorAll(".pivot-panel-box");

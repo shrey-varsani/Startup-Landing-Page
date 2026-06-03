@@ -1,8 +1,5 @@
-/* ==========================================================================
-   FEATURES: BENTO GRID, CORE FEATURE CARDS & ARTWORK ILLUSTRATIONS
-   ========================================================================== */
+/* FEATURES: BENTO GRID, CORE FEATURE CARDS & ARTWORK ILLUSTRATIONS */
 
-/* --- Features Section (Bento Grid) --- */
 .features-section {
   padding: 120px 0;
   position: relative;
@@ -17,7 +14,6 @@
   gap: 16px;
 }
 
-/* --- Special Split Section Lead for features with custom illustration --- */
 .section-lead-split {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -68,7 +64,6 @@
   box-sizing: border-box;
 }
 
-/* Background Circle */
 .html-backdrop-circle {
   position: absolute;
   top: 45%;
@@ -81,7 +76,6 @@
   z-index: 1;
 }
 
-/* Desk */
 .html-desk-surface {
   position: absolute;
   bottom: 0;
@@ -93,7 +87,6 @@
   z-index: 5;
 }
 
-/* Notebook */
 .html-desk-notebook {
   position: absolute;
   bottom: 25px;
@@ -149,7 +142,6 @@
   background: #cfc9d8;
 }
 
-/* Pencils */
 .html-pencil-purple {
   position: absolute;
   bottom: 25px;
@@ -200,7 +192,6 @@
   border-left: 6px solid #fcd7bc;
 }
 
-/* MP3 Player */
 .html-mp3-player {
   position: absolute;
   bottom: 12px;
@@ -230,7 +221,6 @@
   font-weight: bold;
 }
 
-/* Language Badges (HTML) */
 .html-lang-badge-de {
   position: absolute;
   top: 75px;
@@ -350,8 +340,8 @@
   gap: 16px;
   position: relative;
   overflow: hidden;
+    -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -390,7 +380,6 @@
   line-height: 1.5;
 }
 
-/* Visual illustrations inside Bento cards */
 .bento-illustration {
   margin-top: auto;
   border: 1px solid var(--color-border);
@@ -401,7 +390,6 @@
   font-size: 0.75rem;
 }
 
-/* UI mock simulation for waves & bars inside bento cards */
 .spectral-lines {
   display: flex;
   align-items: flex-end;

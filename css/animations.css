@@ -1,8 +1,5 @@
-/* ==========================================================================
-   ANIMATIONS: KEYFRAMES & MICRO-INTERACTIONS
-   ========================================================================== */
+/* ANIMATIONS: KEYFRAMES & MICRO-INTERACTIONS */
 
-/* --- Premium Web Animations & Micro-Interactions (Babbel & SaaS style) --- */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-8px); }
@@ -19,7 +16,6 @@
   100% { transform: scale(1) translate(0, 0); opacity: 0.65; filter: blur(60px); }
 }
 
-/* Scroll Reveal styling rules */
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(32px);
@@ -42,7 +38,6 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Float Animation */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
@@ -52,7 +47,6 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* Pulse Animation */
 @keyframes pulseSubtle {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.02); }
@@ -77,7 +71,6 @@
   }
 }
 
-/* --- Common Keyframes --- */
 @keyframes pulse {
   0% { transform: scale(0.95); opacity: 0.5; box-shadow: 0 0 0 0 rgba(var(--color-accent-rgb-1), 0.3); }
   70% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 6px rgba(var(--color-accent-rgb-1), 0); }

@@ -1,8 +1,5 @@
-/* ==========================================================================
-   RESPONSIVE: MEDIA QUERIES FOR LAPTOPS, TABLETS, AND MOBILE DEVICES
-   ========================================================================== */
+/* RESPONSIVE: MEDIA QUERIES FOR LAPTOPS, TABLETS, AND MOBILE DEVICES */
 
-/* --- Mobile Responsive Rules (Originally in index.css) --- */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -68,7 +65,6 @@
   }
 }
 
-/* --- Responsive additions for added sections --- */
 @media (max-width: 1024px) {
   .stats-grid {
     grid-template-columns: 1fr;
@@ -89,11 +85,8 @@
   }
 }
 
-/* ==========================================================================
-   COMPREHENSIVE PREMIUM MOBILE RESPONSIVE LAYOUT & WIDTH FIXES (OVERWRITES)
-   ========================================================================== */
+/* COMPREHENSIVE PREMIUM MOBILE RESPONSIVE LAYOUT & WIDTH FIXES (OVERWRITES) */
 
-/* --- 1. GLOBAL OVERFLOW PROTECTION & RESETS --- */
 html {
   width: 100%;
   max-width: 100% !important;
@@ -118,7 +111,6 @@ img, video, canvas, svg {
   height: auto;
 }
 
-/* Safe protection for absolute glow backdrops */
 .hero-glow-layer,
 #ambient-glow,
 .html-backdrop-circle,
@@ -128,9 +120,7 @@ img, video, canvas, svg {
   pointer-events: none !important;
 }
 
-/* --- 2. HEADER & NAVIGATION BAR FIXES --- */
 @media (max-width: 1024px) {
-  /* Trigger compact navigation layer at 1024px to prevent tablet crowding & overlap */
   .site-header {
     padding: 12px 0 !important;
   }
@@ -150,11 +140,10 @@ img, video, canvas, svg {
     padding: 24px 20px !important;
     gap: 16px !important;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
-    backdrop-filter: blur(24px) !important;
     -webkit-backdrop-filter: blur(24px) !important;
+    backdrop-filter: blur(24px) !important;
     z-index: 99 !important;
     
-    /* Elegant Slide-Down + Fade Scale premium micro-animation */
     opacity: 0 !important;
     pointer-events: none !important;
     transform: translateY(-16px) scale(0.96) !important;
@@ -170,7 +159,6 @@ img, video, canvas, svg {
     z-index: 101 !important;
   }
   
-  /* Morphing hamburger to X animation */
   .mobile-menu-btn.mobile-open .mobile-menu-lines {
     background: transparent !important;
   }
@@ -288,7 +276,6 @@ img, video, canvas, svg {
   }
 }
 
-/* --- 3. SECTION PADDING & SPACING HARMONIZATION --- */
 @media (max-width: 768px) {
   .hero-section {
     padding: clamp(76px, 12vw, 92px) 0 clamp(24px, 5vw, 36px) 0 !important;
@@ -318,7 +305,6 @@ img, video, canvas, svg {
   }
 }
 
-/* --- 4. TYPOGRAPHY SCALE (RESPONSIVE CLAMP) --- */
 @media (max-width: 768px) {
   h1, .hero-title {
     font-size: clamp(1.75rem, 6.5vw, 2.5rem) !important;
@@ -361,7 +347,6 @@ img, video, canvas, svg {
   }
 }
 
-/* --- 5. HERO COLUMN & CTA BUTTON SYSTEM --- */
 @media (max-width: 1024px) {
   .hero-content {
     align-items: center !important;
@@ -390,7 +375,6 @@ img, video, canvas, svg {
   }
 }
 
-/* --- 6. SHIELD OVERFLOW & PADDING FOR CARDS --- */
 @media (max-width: 768px) {
   .bento-card {
     padding: clamp(14px, 4vw, 20px) !important;
@@ -424,7 +408,6 @@ img, video, canvas, svg {
     gap: clamp(12px, 3.5vw, 16px) !important;
   }
   .theme-toggle-btn {
-    /* Stabilize core button sizing on touch devices */
     min-height: 34px;
   }
   .hero-interactive-card {
@@ -461,9 +444,7 @@ img, video, canvas, svg {
   }
 }
 
-/* --- 7. DETAILED WIDGETS INTERNAL WRAPPING SAFEGUARDS --- */
 @media (max-width: 600px) {
-  /* Stack speaking diagnostical score bubbles vertically to fit properly */
   .scores-row {
     grid-template-columns: 1fr !important;
     gap: 8px !important;
@@ -483,7 +464,6 @@ img, video, canvas, svg {
     font-size: 0.7rem !important;
   }
 
-  /* Make sure bubble text can break cleanly and stretch safely */
   .speech-bubble-illustrative {
     word-wrap: break-word !important;
     word-break: break-word !important;
@@ -491,7 +471,6 @@ img, video, canvas, svg {
     max-width: 100% !important;
   }
   
-  /* Target sector tab pill buttons vertical stacked cards flow */
   .tabs-toggle-pill {
     flex-direction: column !important;
     border-radius: var(--radius-xl) !important;
@@ -507,7 +486,6 @@ img, video, canvas, svg {
     font-size: 0.825rem !important;
   }
   
-  /* Sandbox/Lab Coaches profile lists wrapping safety */
   .coach-item-row {
     flex-wrap: wrap !important;
     gap: 10px !important;
@@ -533,7 +511,6 @@ img, video, canvas, svg {
     font-size: 0.9rem !important;
   }
   
-  /* Timeline progress indicator step charts vertical direction */
   .progress-trajectory-board {
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -551,7 +528,6 @@ img, video, canvas, svg {
     margin: 0 6px !important;
   }
   
-  /* How It works timeline items padding fix */
   .steps-timeline-horizontal {
     grid-template-columns: 1fr !important;
     gap: 28px !important;

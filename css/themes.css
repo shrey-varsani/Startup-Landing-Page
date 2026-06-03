@@ -1,8 +1,5 @@
-/* ==========================================================================
-   THEMES: VARIABLES & APP-WIDE COLOR SCHEMES (English & German)
-   ========================================================================== */
+/* THEMES: VARIABLES & APP-WIDE COLOR SCHEMES (English & German) */
 
-/* 🇬🇧 English Theme Configuration - Default / Dark Mode */
 [data-theme="en"],
 [data-theme="en"][data-appearance="dark"] {
   --bg-dots: rgba(0, 112, 187, 0.06);
@@ -28,7 +25,6 @@
   --badge-text: #60a5fa;
   --active-lang-indicator: #0070BB;
 
-  /* Shadows variable definitions */
   --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.4);
@@ -51,7 +47,6 @@
   --bubble-ai-bg: rgba(15, 12, 18, 0.9);
 }
 
-/* 🇬🇧 English Theme Configuration - Light Mode */
 [data-theme="en"][data-appearance="light"] {
   --bg-dots: rgba(0, 127, 255, 0.05);
   --color-bg: #f4f9ff;
@@ -76,7 +71,6 @@
   --badge-text: #007FFF;
   --active-lang-indicator: #007FFF;
 
-  /* Shadows variable definitions */
   --shadow-sm: 0 4px 10px rgba(0, 127, 255, 0.02);
   --shadow-md: 0 10px 25px rgba(0, 127, 255, 0.03);
   --shadow-lg: 0 15px 40px rgba(0, 127, 255, 0.05);
@@ -99,7 +93,6 @@
   --bubble-ai-bg: rgba(0, 127, 255, 0.04);
 }
 
-/* 🇩🇪 German Theme Configuration - Default / Dark Mode */
 [data-theme="de"],
 [data-theme="de"][data-appearance="dark"] {
   --bg-dots: rgba(185, 28, 28, 0.04);
@@ -125,7 +118,6 @@
   --badge-text: #f87171;
   --active-lang-indicator: #b91c1c;
 
-  /* Shadows variable definitions */
   --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.5);
@@ -148,7 +140,6 @@
   --bubble-ai-bg: rgba(212, 160, 23, 0.08);
 }
 
-/* 🇩🇪 German Theme Configuration - Light Mode */
 [data-theme="de"][data-appearance="light"] {
   --bg-dots: rgba(255, 8, 0, 0.03);
   --color-bg: #fffdf5;
@@ -173,7 +164,6 @@
   --badge-text: #cc0600;
   --active-lang-indicator: #FF0800;
 
-  /* Shadows variable definitions */
   --shadow-sm: 0 4px 10px rgba(255, 8, 0, 0.02);
   --shadow-md: 0 10px 25px rgba(255, 8, 0, 0.03);
   --shadow-lg: 0 15px 40px rgba(255, 8, 0, 0.04);
@@ -196,7 +186,6 @@
   --bubble-ai-bg: rgba(255, 8, 0, 0.05);
 }
 
-/* --- Theme Toggle Button --- */
 .theme-toggle {
   background: var(--color-input-bg);
   border: 1px solid var(--color-border);
@@ -221,7 +210,6 @@
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08), 0 2px 8px var(--shadow-sm);
 }
 
-/* Beautiful switch sliding thumb */
 .theme-toggle-thumb {
   width: 24px;
   height: 24px;
@@ -236,7 +224,6 @@
   z-index: 2;
 }
 
-/* Custom CSS Icons */
 .theme-toggle .theme-icon {
   position: absolute;
   width: 100%;
@@ -247,7 +234,6 @@
   transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Custom CSS Sun Icon */
 .sun-icon-css {
   width: 18px;
   height: 18px;
@@ -256,7 +242,7 @@
 .sun-core {
   width: 8px;
   height: 8px;
-  background: #eab308; /* Gorgeous golden sun */
+  background: #eab308;
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(234, 179, 8, 0.6);
   transition: background-color 0.3s ease;
@@ -275,7 +261,6 @@
   bottom: 50%;
   opacity: 0.9;
 }
-/* Place absolute lines radiating from center */
 .sun-ray.r1 { transform: translateX(-50%) rotate(0deg) translateY(-5px); }
 .sun-ray.r2 { transform: translateX(-50%) rotate(45deg) translateY(-5px); }
 .sun-ray.r3 { transform: translateX(-50%) rotate(90deg) translateY(-5px); }
@@ -285,23 +270,20 @@
 .sun-ray.r7 { transform: translateX(-50%) rotate(270deg) translateY(-5px); }
 .sun-ray.r8 { transform: translateX(-50%) rotate(315deg) translateY(-5px); }
 
-/* Custom CSS Moon Icon */
 .moon-icon-css-wrapper {
-  /* wrapper helper */
 }
 .moon-icon-css {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  box-shadow: inset -3.5px -1.5px 0 0 #f1f5f9; /* Soft silvery moon crescent */
+  box-shadow: inset -3.5px -1.5px 0 0 #f1f5f9;
   transform: rotate(-15deg);
   transition: box-shadow 0.3s ease;
   filter: drop-shadow(0 0 4px rgba(226, 232, 240, 0.5));
 }
 
-/* Light / Dark Mode switch animations */
 [data-appearance="light"] .theme-toggle {
-  background: #fef9c3; /* Very soft pastel yellow-white background */
+  background: #fef9c3;
   border-color: #fef08a;
 }
 [data-appearance="light"] .theme-toggle-thumb {
@@ -318,12 +300,12 @@
 }
 
 [data-appearance="dark"] .theme-toggle {
-  background: #1e1b4b; /* Deep Indigo base */
+  background: #1e1b4b;
   border-color: #312e81;
 }
 [data-appearance="dark"] .theme-toggle-thumb {
   transform: translateX(26px);
-  background: #0f172a; /* Slate 900 custom background thumb */
+  background: #0f172a;
 }
 [data-appearance="dark"] .theme-icon.sun-icon-css {
   opacity: 0;
@@ -334,7 +316,6 @@
   transform: rotate(0) scale(1);
 }
 
-/* Elegant Light Mode Micro Overrides */
 [data-appearance="light"] {
   scrollbar-color: rgba(0, 0, 0, 0.3) var(--color-bg) !important;
 }
@@ -380,7 +361,6 @@
   box-shadow: var(--shadow-sm) !important;
 }
 
-/* Add Transition Smoothness to Main Themed Containers */
 body,
 .site-header,
 .bento-card,
@@ -402,9 +382,7 @@ body,
               box-shadow var(--transition-smooth);
 }
 
-/* ==========================================================================
-   🇩🇪 GERMAN MODE EXQUISITE APP OVERRIDES (Muted Gold & Deep Red Glow)
-   ========================================================================== */
+/* 🇩🇪 GERMAN MODE EXQUISITE APP OVERRIDES (Muted Gold & Deep Red Glow) */
 [data-theme="de"] .btn-primary {
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast) !important;
 }
@@ -445,7 +423,6 @@ body,
   text-shadow: 0 0 8px rgba(212, 160, 23, 0.3) !important;
 }
 
-/* German Active Indicator line custom colors */
 [data-theme="de"] .nav-link::after {
   background-color: #d4a017 !important;
 }
@@ -456,15 +433,12 @@ body,
   color: #f8fafc !important;
 }
 
-/* Glow indicators styled elegantly with the gold highlight */
 [data-theme="de"] .status-dot {
   background-color: #d4a017 !important;
   box-shadow: 0 0 8px #d4a017 !important;
 }
 
-/* ==========================================================================
-   🇩🇪 GERMAN MODE PREMIUM EXQUISITE LIGHT OVERRIDES
-   ========================================================================== */
+/* 🇩🇪 GERMAN MODE PREMIUM EXQUISITE LIGHT OVERRIDES */
 @keyframes de-gradient-flow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -508,7 +482,6 @@ body,
   background: #ffffff !important;
 }
 
-/* Elegant German flag top accent line for cards in Light Mode */
 [data-theme="de"][data-appearance="light"] .bento-card::before,
 [data-theme="de"][data-appearance="light"] .pricing-card::before,
 [data-theme="de"][data-appearance="light"] .hero-interactive-card::before,
@@ -554,15 +527,11 @@ body,
   box-shadow: 0 0 10px #FF0800, 0 0 4px #FF0800 !important;
 }
 
-/* Soft blur glow orbs for background ambiance */
 [data-theme="de"][data-appearance="light"] .radial-gradient-glow {
   background: radial-gradient(circle, rgba(253, 238, 0, 0.14) 0%, rgba(255, 8, 0, 0.05) 60%, transparent 80%) !important;
 }
 
-
-/* ==========================================================================
-   🇬🇧 ENGLISH MODE PREMIUM EXQUISITE LIGHT OVERRIDES
-   ========================================================================== */
+/* 🇬🇧 ENGLISH MODE PREMIUM EXQUISITE LIGHT OVERRIDES */
 @keyframes en-gradient-flow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -610,13 +579,12 @@ body,
   position: relative;
   overflow: hidden;
   border-color: rgba(0, 127, 255, 0.14) !important;
-  background: rgba(255, 255, 255, 0.82) !important; /* Premium subtle translucency */
-  backdrop-filter: blur(16px) !important;              /* Sleek glassmorphism */
-  -webkit-backdrop-filter: blur(16px) !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+  backdrop-filter: blur(16px) !important;
   box-shadow: 0 10px 30px rgba(0, 127, 255, 0.02) !important;
 }
 
-/* Symmetrical elegant light-blue top accent border for card aesthetics */
 [data-theme="en"][data-appearance="light"] .bento-card::before,
 [data-theme="en"][data-appearance="light"] .pricing-card::before,
 [data-theme="en"][data-appearance="light"] .hero-interactive-card::before,
@@ -662,12 +630,10 @@ body,
   box-shadow: 0 0 10px #007FFF, 0 0 4px #007FFF !important;
 }
 
-/* Ambient soft gradient glow layer for English mode */
 [data-theme="en"][data-appearance="light"] .radial-gradient-glow {
   background: radial-gradient(circle, rgba(0, 127, 255, 0.1) 0%, rgba(90, 169, 255, 0.03) 65%, transparent 80%) !important;
 }
 
-/* Decorative floating elegant blue blur glow circles under the hero section and margins */
 [data-theme="en"][data-appearance="light"] .hero-glow-layer::before {
   content: '';
   position: absolute;
@@ -707,5 +673,3 @@ body,
   0% { transform: translateY(0) scale(1) rotate(0deg); }
   100% { transform: translateY(50px) scale(0.95) rotate(-15deg); }
 }
-
-
