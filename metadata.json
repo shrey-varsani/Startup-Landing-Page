@@ -1,6 +1,4 @@
 {
   "name": "AI Language Speaking Platform",
-  "description": "A minimalist, premium, and conversion-focused landing page for an AI-powered English and German speaking platform.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "description": "A minimalist, premium, and conversion-focused landing page for an AI-powered English and German speaking platform."
 }

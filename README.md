@@ -11,7 +11,7 @@ You can explore the live application here:
 
 - **HTML5**: Semantic structure and accessible content.
 - **CSS3**: Modern styling, responsive layouts, and smooth animations.
-- **Vanilla JavaScript**: Interactive logic, dynamic language switching, and simulated coaching sessions.
+- **JavaScript**: Interactive logic, dynamic language switching, and simulated coaching sessions.
 
 ### Key Features
 
@@ -25,5 +25,3 @@ You can explore the live application here:
 
 1. Download or clone the project folder.
 2. Open the folder with a local web server (such as VS Code's **Live Server**) and view `index.html`.
-
-_Note: Because this project uses modern JavaScript modules for better organization, it is recommended to open the folder using a local web server (like the "Live Server" extension in VS Code) to ensure all interactive features function correctly._
